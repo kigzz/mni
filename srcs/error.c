@@ -58,7 +58,7 @@ int	mini_exit(t_list *cmd, int *is_exit)
 		ft_putstr_fd("minishell: exit: ", 2);
 		ft_putstr_fd(node->full_cmd[1], 2);
 		ft_putstr_fd(": numeric argument required\n", 2);
-		return (255);
+		return (2);
 	}
 	else if (node->full_cmd[2])
 	{

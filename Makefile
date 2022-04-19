@@ -3,8 +3,7 @@
 
 NAME			=	minishell
 CC				=	gcc
-FLAGS			=	-Wall -Wextra -Werror -Iincludes -Ilibft
-#-g3 -fsanitize=address
+FLAGS			=	-Wall -Wextra -Werror -Iincludes -Ilibft -g3 -fsanitize=address
 
 RM				=	rm -rf
 
