@@ -1,26 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   handle_sigint.c                                    :+:      :+:    :+:   */
+/*   ft_matrix_dup.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/19 13:50:15 by bpouchep          #+#    #+#             */
-/*   Updated: 2022/04/19 13:50:16 by bpouchep         ###   ########.fr       */
+/*   Created: 2022/04/19 13:44:01 by bpouchep          #+#    #+#             */
+/*   Updated: 2022/04/19 13:44:09 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/minishell.h"
+#include "libft.h"
 
-int	g_status;
-
-void	handle_sigint(int sig)
+char	**ft_dup_matrix(char **m)
 {
-	if (sig == SIGINT)
+	char	**out;
+	int		n_rows;
+	int		i;
+
+	i = 0;
+	n_rows = ft_matrixlen(m);
+	out = malloc(sizeof(char *) * (n_rows + 1));
+	if (!out)
+		return (NULL);
+	while (m[i])
 	{
-		g_status = 130;
-		ioctl(STDIN_FILENO, TIOCSTI, "\n");
-		rl_replace_line("", 0);
-		rl_on_new_line();
+		out[i] = ft_strdup(m[i]);
+		if (!out[i])
+		{
+			ft_matrix_free(&out);
+			return (NULL);
+		}
+		i++;
 	}
+	out[i] = NULL;
+	return (out);
 }

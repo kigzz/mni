@@ -1,26 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   handle_sigint.c                                    :+:      :+:    :+:   */
+/*   ft_matrixlen.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/19 13:50:15 by bpouchep          #+#    #+#             */
-/*   Updated: 2022/04/19 13:50:16 by bpouchep         ###   ########.fr       */
+/*   Created: 2022/04/19 13:45:36 by bpouchep          #+#    #+#             */
+/*   Updated: 2022/04/19 13:45:37 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/minishell.h"
+#include "libft.h"
 
-int	g_status;
-
-void	handle_sigint(int sig)
+int	ft_matrixlen(char **m)
 {
-	if (sig == SIGINT)
-	{
-		g_status = 130;
-		ioctl(STDIN_FILENO, TIOCSTI, "\n");
-		rl_replace_line("", 0);
-		rl_on_new_line();
-	}
+	int	i;
+
+	i = 0;
+	while (m && m[i])
+		i++;
+	return (i);
 }

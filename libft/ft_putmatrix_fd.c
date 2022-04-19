@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   handle_sigint.c                                    :+:      :+:    :+:   */
+/*   ft_putmatrix_fd.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/19 13:50:15 by bpouchep          #+#    #+#             */
-/*   Updated: 2022/04/19 13:50:16 by bpouchep         ###   ########.fr       */
+/*   Created: 2022/04/19 13:46:00 by bpouchep          #+#    #+#             */
+/*   Updated: 2022/04/19 13:46:02 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/minishell.h"
+#include "libft.h"
 
-int	g_status;
-
-void	handle_sigint(int sig)
+int	ft_putmatrix_fd(char **m, int nl, int fd)
 {
-	if (sig == SIGINT)
+	int	i;
+	int	count;
+
+	count = 0;
+	i = 0;
+	while (m && m[i])
 	{
-		g_status = 130;
-		ioctl(STDIN_FILENO, TIOCSTI, "\n");
-		rl_replace_line("", 0);
-		rl_on_new_line();
+		if (nl)
+			count += ft_putendl_fd(m[i], fd);
+		else
+			count += ft_putstr_fd(m[i], fd);
+		i++;
 	}
+	return (count);
 }

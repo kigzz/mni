@@ -40,6 +40,7 @@ typedef struct s_list
 }					t_list;
 
 int					ft_atoi(const char *nptr);
+int					ft_atoi2(const char *nptr, long *nbr);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
 int					ft_isascii(int c);
@@ -93,5 +94,14 @@ t_dlst				*ft_dlstlast(t_dlst *dlst);
 t_dlst				*ft_dlstnew(int data);
 int					ft_dlstsize(t_dlst *dlst);
 char				*ft_get_next_line(int fd);
+int					ft_strchr_char(const char *s, int c);
+int					ft_strchr_set(const char *s, char *set);
+char				**ft_replace_in_matrix(char ***big, char **small, int n);
+int					ft_putmatrix_fd(char **m, int nl, int fd);
+int					ft_matrixlen(char **m);
+void				ft_matrix_free(char ***m);
+char				**ft_matrix_extend(char **in, char *newstr);
+char				**ft_dup_matrix(char **m);
+char				**ft_lsttomatrix(t_list *lst);
 
 #endif

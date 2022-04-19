@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   handle_sigint.c                                    :+:      :+:    :+:   */
+/*   ft_lst_to_matrix.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/19 13:50:15 by bpouchep          #+#    #+#             */
-/*   Updated: 2022/04/19 13:50:16 by bpouchep         ###   ########.fr       */
+/*   Created: 2022/04/19 13:45:04 by bpouchep          #+#    #+#             */
+/*   Updated: 2022/04/19 13:45:05 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/minishell.h"
+#include "libft.h"
 
-int	g_status;
-
-void	handle_sigint(int sig)
+char	**ft_lsttomatrix(t_list *lst)
 {
-	if (sig == SIGINT)
+	char	**matrix;
+	t_list	*aux;
+	char	*temp;
+
+	aux = lst;
+	matrix = NULL;
+	while (aux)
 	{
-		g_status = 130;
-		ioctl(STDIN_FILENO, TIOCSTI, "\n");
-		rl_replace_line("", 0);
-		rl_on_new_line();
+		temp = ft_strdup(aux->content);
+		matrix = ft_matrix_extend(matrix, temp);
+		aux = aux->next;
+		free(temp);
 	}
+	return (matrix);
 }
