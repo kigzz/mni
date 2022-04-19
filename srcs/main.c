@@ -80,18 +80,19 @@ int	main(int argc, char **argv, char **envp)
 	char				*output;
 	t_prompt			prompt;
 
-	if (argc == 1)
+	if (argc != 1)
 	{
-		prompt = init_prompt(argv, envp);
-		while (42)
-		{
-			signal(SIGINT, handle_sigint);
-			signal(SIGQUIT, SIG_IGN);
-			output = readline("$> ");
-			if (!check_args(output, &prompt))
-				break ;
-		}
+		ft_putstr_fd("No arguments after ./minishell\n", 1);
+		return (0);
 	}
-	else
-		exit(g_status);
+	prompt = init_prompt(argv, envp);
+	while (argc && argv)
+	{
+		signal(SIGINT, handle_sigint);
+		signal(SIGQUIT, SIG_IGN);
+		output = readline("$> ");
+		if (!check_args(output, &prompt))
+			break ;
+	}
+	exit(g_status);
 }

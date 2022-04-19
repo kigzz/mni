@@ -29,10 +29,6 @@ int	ft_atoi2(const char *nptr, long *nbr)
 	while (ft_isdigit(*nptr))
 	{
 		*nbr = 10 * *nbr + (*nptr - '0');
-		if (*nbr > 2147483647 && sign == 1)
-			return (-1);
-		if (*nbr > 2147483648 && sign == -1)
-			return (-1);
 		nptr++;
 	}
 	if (*nptr && !ft_isspace(*nptr))

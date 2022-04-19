@@ -48,7 +48,6 @@ int	mini_exit(t_list *cmd, int *is_exit)
 	t_mini	*node;
 	long	status[2];
 
-
 	node = cmd->content;
 	*is_exit = !cmd->next;
 	if (*is_exit)
