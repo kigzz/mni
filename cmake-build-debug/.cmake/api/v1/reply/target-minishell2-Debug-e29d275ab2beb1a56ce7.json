@@ -128,8 +128,7 @@
 				75,
 				76,
 				77,
-				78,
-				79
+				78
 			]
 		}
 	],
@@ -238,8 +237,7 @@
 				75,
 				76,
 				77,
-				78,
-				79
+				78
 			]
 		},
 		{
@@ -723,12 +721,6 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libft/ft_strchr_set.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "srcs/prompt.c",
 			"sourceGroupIndex" : 0
 		}
 	],
