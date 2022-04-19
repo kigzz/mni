@@ -12,8 +12,6 @@
 
 #include "../includes/minishell.h"
 
-extern int	g_status;
-
 int	get_fd(int oldfd, char *path, int flags[2])
 {
 	int	fd;

@@ -12,8 +12,6 @@
 
 #include "../includes/minishell.h"
 
-extern int	g_status;
-
 static void	mini_getpid(t_prompt *p)
 {
 	pid_t	pid;

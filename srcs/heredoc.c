@@ -12,8 +12,6 @@
 
 #include "../includes/minishell.h"
 
-extern int	g_status;
-
 char	*get_here_str(char *str[2], size_t len, char *limit, char *warn)
 {
 	char	*temp;

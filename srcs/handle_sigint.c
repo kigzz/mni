@@ -12,8 +12,6 @@
 
 #include "../includes/minishell.h"
 
-int	g_status;
-
 void	handle_sigint(int sig)
 {
 	if (sig == SIGINT)

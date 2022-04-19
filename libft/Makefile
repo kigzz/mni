@@ -38,12 +38,12 @@ SRCS		=	ft_atoi.c ft_isalnum.c \
 				ft_dlstadd_back.c ft_dlstfirst.c \
 				ft_dlstlast.c ft_dlstnew.c \
 				ft_dlstsize.c get_next_line.c \
-				ft_atoi2.c ft_lst_to_matrix.c \
 				ft_matrix_dup.c ft_matrix_extend.c \
 				ft_matrix_free.c ft_matrixlen.c \
 				ft_putmatrix_fd.c ft_replace_in_matrix.c \
 				ft_strchr_char.c ft_strchr_set.c \
-				ft_isspace.c
+				ft_isspace.c ft_atoi2.c
+
 
 OBJS		=	$(SRCS:.c=.o)
 

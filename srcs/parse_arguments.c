@@ -12,8 +12,6 @@
 
 #include "../includes/minishell.h"
 
-extern int	g_status;
-
 static char	**split_all(char **args, t_prompt *prompt)
 {
 	char	**subsplit;

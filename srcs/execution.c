@@ -12,8 +12,6 @@
 
 #include "../includes/minishell.h"
 
-extern int	g_status;
-
 void	child_builtin(t_prompt *prompt, t_mini *n, int l, t_list *cmd)
 {
 	signal(SIGINT, SIG_DFL);

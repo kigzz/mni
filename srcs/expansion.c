@@ -12,8 +12,6 @@
 
 #include "../includes/minishell.h"
 
-extern int	g_status;
-
 char	*expand_path(char *str, int i, int quotes[2], char *var)
 {
 	char	*path;

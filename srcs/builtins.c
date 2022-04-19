@@ -12,8 +12,6 @@
 
 #include "../includes/minishell.h"
 
-extern int	g_status;
-
 int	builtin(t_prompt *prompt, t_list *cmd, int *is_exit, int n)
 {
 	char	**a;

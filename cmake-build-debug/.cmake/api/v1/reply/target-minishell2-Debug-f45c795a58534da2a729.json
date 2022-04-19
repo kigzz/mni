@@ -672,12 +672,6 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "libft/ft_lst_to_matrix.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
 			"path" : "libft/ft_matrixlen.c",
 			"sourceGroupIndex" : 0
 		},
@@ -721,6 +715,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "libft/ft_strchr_set.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libft/ft_strrchr.c",
 			"sourceGroupIndex" : 0
 		}
 	],
