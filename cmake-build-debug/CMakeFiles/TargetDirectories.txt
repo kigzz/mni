@@ -1,0 +1,3 @@
+/home/bpouchep/CLionProjects/minishell2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/bpouchep/CLionProjects/minishell2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/bpouchep/CLionProjects/minishell2/cmake-build-debug/CMakeFiles/minishell2.dir
