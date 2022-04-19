@@ -60,7 +60,7 @@ static char	**get_trimmed(char **args)
 	int		j;
 
 	j = -1;
-	temp = ft_dup_matrix(args);
+	temp = ft_matrix_dup(args);
 	while (temp && temp[++j])
 	{
 		aux = ft_strtrim_all(temp[j], 0, 0);

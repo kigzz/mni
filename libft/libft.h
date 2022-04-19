@@ -101,7 +101,7 @@ int					ft_putmatrix_fd(char **m, int nl, int fd);
 int					ft_matrixlen(char **m);
 void				ft_matrix_free(char ***m);
 char				**ft_matrix_extend(char **in, char *newstr);
-char				**ft_dup_matrix(char **m);
+char				**ft_matrix_dup(char **m);
 char				**ft_lsttomatrix(t_list *lst);
 
 #endif

@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-char	**ft_dup_matrix(char **m)
+char	**ft_matrix_dup(char **m)
 {
 	char	**out;
 	int		n_rows;

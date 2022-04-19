@@ -68,7 +68,7 @@ static t_prompt	init_prompt(char **argv, char **envp)
 
 	str = NULL;
 	prompt.cmds = NULL;
-	prompt.envp = ft_dup_matrix(envp);
+	prompt.envp = ft_matrix_dup(envp);
 	g_status = 0;
 	mini_getpid(&prompt);
 	prompt = init_vars(prompt, str, argv);
@@ -77,28 +77,21 @@ static t_prompt	init_prompt(char **argv, char **envp)
 
 int	main(int argc, char **argv, char **envp)
 {
-	char				*out;
+	char				*output;
 	t_prompt			prompt;
 
 	if (argc == 1)
 	{
 		prompt = init_prompt(argv, envp);
-		while (argv && argc)
+		while (42)
 		{
 			signal(SIGINT, handle_sigint);
 			signal(SIGQUIT, SIG_IGN);
-			out = readline("$> ");
-			if (!out)
-			{
-				ft_putstr_fd("exit\n", 1);
-				return (0);
-			}
-			if (out[0] != '\0')
-				add_history(out);
-			if (!check_args(out, &prompt))
+			output = readline("$> ");
+			if (!check_args(output, &prompt))
 				break ;
 		}
 	}
 	else
-		return (0);
+		exit(g_status);
 }

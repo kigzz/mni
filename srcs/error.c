@@ -48,6 +48,7 @@ int	mini_exit(t_list *cmd, int *is_exit)
 	t_mini	*node;
 	long	status[2];
 
+
 	node = cmd->content;
 	*is_exit = !cmd->next;
 	if (*is_exit)
@@ -68,7 +69,7 @@ int	mini_exit(t_list *cmd, int *is_exit)
 		ft_putstr_fd("minishell: exit: too many arguments\n", 2);
 		return (1);
 	}
-	status[0] %= 256 + 256;
+	status[0] %= 256 + 256 * (status[0] < 0);
 	return (status[0]);
 }
 

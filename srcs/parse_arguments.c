@@ -64,6 +64,13 @@ void	*check_args(char *out, t_prompt *p)
 	char	**a;
 	t_mini	*n;
 
+	if (!out)
+	{
+		ft_putstr_fd("exit\n", 1);
+		return (NULL);
+	}
+	if (out[0] != '\0')
+		add_history(out);
 	a = ft_cmdtrim(out, " ");
 	free(out);
 	if (!a)
