@@ -28,7 +28,7 @@
 # define READ_END 0
 # define WRITE_END 1
 
-int g_status;
+int	g_status;
 
 typedef struct s_prompt
 {
