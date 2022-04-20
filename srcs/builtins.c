@@ -23,7 +23,10 @@ int	builtin(t_prompt *prompt, t_list *cmd, int *is_exit, int n)
 		if (a)
 			n = ft_strlen(*a);
 		if (a && !ft_strncmp(*a, "exit", n) && n == 4)
+		{
 			g_status = mini_exit(cmd, is_exit);
+			ft_matrix_free(&prompt->envp);
+		}
 		else if (!cmd->next && a && !ft_strncmp(*a, "cd", n) && n == 2)
 			g_status = mini_cd(prompt);
 		else if (!cmd->next && a && !ft_strncmp(*a, "export", n) && n == 6)
@@ -38,7 +41,6 @@ int	builtin(t_prompt *prompt, t_list *cmd, int *is_exit, int n)
 		}
 		cmd = cmd->next;
 	}
-	ft_matrix_free(&prompt->envp);
 	return (g_status);
 }
 
