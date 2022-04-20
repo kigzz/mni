@@ -12,6 +12,8 @@
 
 #include "../includes/minishell.h"
 
+int	g_status;
+
 static void	mini_getpid(t_prompt *p)
 {
 	pid_t	pid;
@@ -37,6 +39,7 @@ static t_prompt	init_vars(t_prompt prompt, char *str, char **argv)
 	char	*num;
 
 	str = getcwd(NULL, 0);
+	printf("%s\n", str);
 	prompt.envp = mini_setenv("PWD", str, prompt.envp, 3);
 	free(str);
 	str = mini_getenv("SHLVL", prompt.envp, 5);

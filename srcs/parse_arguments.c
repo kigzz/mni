@@ -65,6 +65,7 @@ void	*check_args(char *out, t_prompt *p)
 	if (!out)
 	{
 		ft_putstr_fd("exit\n", 1);
+		ft_matrix_free(&p->envp);
 		return (NULL);
 	}
 	if (out[0] != '\0')
