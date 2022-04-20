@@ -30,6 +30,7 @@ void	child_builtin(t_prompt *prompt, t_mini *n, int l, t_list *cmd)
 		ft_putmatrix_fd(prompt->envp, 1, 1);
 		g_status = 0;
 	}
+	ft_matrix_free(&prompt->envp);
 }
 
 static void	*child_redir(t_list *cmd, int fd[2])
