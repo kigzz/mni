@@ -91,10 +91,10 @@ int		mini_exit(t_list *cmd, int *is_exit);
 void	*check_args(char *out, t_prompt *p);
 
 /* Splits command and args into a matrix, taking quotes into account */
-char	**ft_cmdtrim(char const *s, char *set);
+char	**ft_cmd_trim(char const *s, char *set);
 
 /* Copy of ft_split but includes separators and takes quotes into account */
-char	**ft_cmdsubsplit(char const *s, char *set);
+char	**ft_cmd_split(char const *s, char *set);
 
 /* Strtrim from all needed quotes in s1 */
 char	*ft_strtrim_all(char const *s1, int squote, int dquote);

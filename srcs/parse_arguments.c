@@ -24,11 +24,16 @@ static char	**split_all(char **args, t_prompt *prompt)
 		args[i] = expand_vars(args[i], -1, quotes, prompt);
 		args[i] = expand_path(args[i], -1, quotes, \
 			mini_getenv("HOME", prompt->envp, 4));
-		subsplit = ft_cmdsubsplit(args[i], "<|>");
+		subsplit = ft_cmd_split(args[i], "<|>");
 		ft_replace_in_matrix(&args, subsplit, i);
 		i += ft_matrixlen(subsplit) - 1;
 		ft_matrix_free(&subsplit);
 	}
+	printf ("---- FT_CMD_SPLIT ----\n");
+	for (i = 0; i < ft_matrixlen(args); i++)
+		printf("%s\n", args[i]);
+	printf ("----------------------\n");
+
 	return (args);
 }
 
@@ -70,7 +75,9 @@ void	*check_args(char *out, t_prompt *p)
 	}
 	if (out[0] != '\0')
 		add_history(out);
-	a = ft_cmdtrim(out, " ");
+	a = ft_cmd_trim(out, " ");
+//	for (int i = 0; i < ft_matrixlen(a); i++)
+//		printf("%s\n", a[i]);
 	free(out);
 	if (!a)
 		mini_perror(QUOTE, NULL, 1);

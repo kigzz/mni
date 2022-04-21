@@ -65,7 +65,7 @@ static char	**ft_fill_array(char **aux, char *s, char *set, int i[3])
 	return (aux);
 }
 
-char	**ft_cmdsubsplit(char const *s, char *set)
+char	**ft_cmd_split(char const *s, char *set)
 {
 	char	**aux;
 	int		nwords;
