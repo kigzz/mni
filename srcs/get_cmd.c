@@ -81,6 +81,7 @@ void	get_cmd(t_prompt *prompt, t_list *cmd, char **s, char *path)
 	printf("full path %s\n", n->full_path);
 	printf("infile %d\n", n->infile);
 	printf("outfile %d\n", n->outfile);
+	printf("pid %d\n", prompt->pid);
 	printf ("----------------------\n");
 	if (!is_builtin(n) && n && n->full_cmd && dir)
 		mini_perror(IS_DIR, *n->full_cmd, 126);
