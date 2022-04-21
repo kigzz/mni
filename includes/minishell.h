@@ -59,6 +59,8 @@ enum	e_mini_error
 	NOT_DIR = 13
 };
 
+void	ft_replace_tabs_returns(char *str);
+
 /* Handles all builtin functions */
 int		builtin(t_prompt *prompt, t_list *cmd, int *is_exit, int n);
 

@@ -74,6 +74,7 @@ void	*check_args(char *out, t_prompt *p)
 	}
 	if (out[0] != '\0')
 		add_history(out);
+	ft_replace_tabs_returns(out);
 	a = ft_cmd_trim(out, " ");
 //	printf("---------- CMD_TRIM --------\n");
 //	for (int i = 0; i < ft_matrixlen(a); i++)

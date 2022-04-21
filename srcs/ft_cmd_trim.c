@@ -12,6 +12,28 @@
 
 #include "../includes/minishell.h"
 
+void	ft_replace_tabs_returns(char *str)
+{
+	int	i;
+	int	s_quotes;
+	int	d_quotes;
+
+	i = 0;
+	s_quotes = 0;
+	d_quotes = 0;
+	while (str[i])
+	{
+		if (str[i] == '\'' && (d_quotes % 2 == 0))
+			s_quotes++;
+		if (str[i] == '\"' && (s_quotes % 2 == 0))
+			d_quotes++;
+		if ((str[i] == '\t' || str[i] == '\r')
+			&& (s_quotes % 2 == 0) && (d_quotes % 2 == 0))
+			str[i] = ' ';
+		i++;
+	}
+}
+
 static int	ft_count_words(const char *s, char *c, int i[2])
 {
 	int		q[2];
