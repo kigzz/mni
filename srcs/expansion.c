@@ -54,9 +54,7 @@ static char	*get_substr_var(char *str, int i, t_prompt *prompt)
 	aux = ft_substr(str, 0, i - 1);
 	var = mini_getenv(&str[i], prompt->envp, \
 		ft_strchr_set(&str[i], "\"\'$|>< "));
-	if (!var && str[i] == '$')
-		var = ft_itoa(prompt->pid);
-	else if (!var && str[i] == '?')
+	if (!var && str[i] == '?')
 		var = ft_itoa(g_status);
 	path = ft_strjoin(aux, var);
 	free(aux);

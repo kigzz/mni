@@ -29,11 +29,10 @@ static char	**split_all(char **args, t_prompt *prompt)
 		i += ft_matrixlen(subsplit) - 1;
 		ft_matrix_free(&subsplit);
 	}
-	printf ("---- FT_CMD_SPLIT ----\n");
-	for (i = 0; i < ft_matrixlen(args); i++)
-		printf("%s\n", args[i]);
-	printf ("----------------------\n");
-
+//	printf ("---- FT_CMD_SPLIT ----\n");
+//	for (i = 0; i < ft_matrixlen(args); i++)
+//		printf("%s\n", args[i]);
+//	printf ("----------------------\n");
 	return (args);
 }
 
@@ -76,8 +75,10 @@ void	*check_args(char *out, t_prompt *p)
 	if (out[0] != '\0')
 		add_history(out);
 	a = ft_cmd_trim(out, " ");
+//	printf("---------- CMD_TRIM --------\n");
 //	for (int i = 0; i < ft_matrixlen(a); i++)
 //		printf("%s\n", a[i]);
+//	printf("----------------------------\n");
 	free(out);
 	if (!a)
 		mini_perror(QUOTE, NULL, 1);

@@ -75,14 +75,13 @@ void	get_cmd(t_prompt *prompt, t_list *cmd, char **s, char *path)
 
 	n = cmd->content;
 	dir = cmd_checks(prompt, cmd, &s, path);
-	printf ("------- GET_CMD ------\n");
-	for (int i = 0; i < ft_matrixlen(n->full_cmd); i++)
-		printf("full cmd %s\n", n->full_cmd[i]);
-	printf("full path %s\n", n->full_path);
-	printf("infile %d\n", n->infile);
-	printf("outfile %d\n", n->outfile);
-	printf("pid %d\n", prompt->pid);
-	printf ("----------------------\n");
+//	printf ("------- GET_CMD ------\n");
+//	for (int i = 0; i < ft_matrixlen(n->full_cmd); i++)
+//		printf("full cmd %s\n", n->full_cmd[i]);
+//	printf("full path %s\n", n->full_path);
+//	printf("infile %d\n", n->infile);
+//	printf("outfile %d\n", n->outfile);
+//	printf ("----------------------\n");
 	if (!is_builtin(n) && n && n->full_cmd && dir)
 		mini_perror(IS_DIR, *n->full_cmd, 126);
 	else if (!is_builtin(n) && n && n->full_path && \

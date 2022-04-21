@@ -14,26 +14,6 @@
 
 int	g_status;
 
-static void	mini_getpid(t_prompt *p)
-{
-	pid_t	pid;
-
-	pid = fork();
-	if (pid < 0)
-	{
-		mini_perror(FORKERR, NULL, 1);
-		ft_matrix_free(&p->envp);
-		exit(1);
-	}
-	if (!pid)
-	{
-		ft_matrix_free(&p->envp);
-		exit(1);
-	}
-	waitpid(pid, NULL, 0);
-	p->pid = pid - 1;
-}
-
 static t_prompt	init_vars(t_prompt prompt, char *str, char **argv)
 {
 	char	*num;
@@ -70,7 +50,6 @@ static t_prompt	init_prompt(char **argv, char **envp)
 	prompt.cmds = NULL;
 	prompt.envp = ft_matrix_dup(envp);
 	g_status = 0;
-	mini_getpid(&prompt);
 	prompt = init_vars(prompt, str, argv);
 	return (prompt);
 }
