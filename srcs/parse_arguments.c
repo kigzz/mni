@@ -87,7 +87,7 @@ void	*check_args(char *out, t_prompt *p)
 	p = parse_args(a, p);
 	if (p && p->cmds)
 		n = p->cmds->content;
-//	printf ("------- GET_CMD ------\n");
+//	printf ("------- t_mini ------\n");
 //	for (int i = 0; i < ft_matrixlen(n->full_cmd); i++)
 //		printf("full cmd %s\n", n->full_cmd[i]);
 //	printf("full path %s\n", n->full_path);
@@ -95,7 +95,7 @@ void	*check_args(char *out, t_prompt *p)
 //	printf("outfile %d\n", n->outfile);
 //	printf ("----------------------\n");
 	if (p && p->cmds && n && n->full_cmd && ft_lstsize(p->cmds) == 1)
-		p->envp = mini_setenv("_", n->full_path, \
+		p->envp = mini_setenv("_", n->full_cmd[ft_matrixlen(n->full_cmd) - 1], \
 			p->envp, 1);
 	if (p && p->cmds)
 		ft_lstclear(&p->cmds, free_content);
