@@ -34,11 +34,7 @@ int	builtin(t_prompt *prompt, t_list *cmd, int *is_exit, int n)
 		else if (!cmd->next && a && !ft_strncmp(*a, "unset", n) && n == 5)
 			g_status = mini_unset(prompt);
 		else
-		{
-			signal(SIGINT, SIG_IGN);
-			signal(SIGQUIT, SIG_IGN);
-			exec_cmd(prompt, cmd);
-		}
+			sig_and_exec(prompt, cmd);
 		cmd = cmd->next;
 	}
 	return (g_status);

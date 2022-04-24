@@ -22,3 +22,10 @@ void	handle_sigint(int sig)
 		rl_on_new_line();
 	}
 }
+
+void	sig_and_exec(t_prompt *prompt, t_list *cmd)
+{
+	signal(SIGINT, SIG_IGN);
+	signal(SIGQUIT, SIG_IGN);
+	exec_cmd(prompt, cmd);
+}

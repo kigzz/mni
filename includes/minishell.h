@@ -154,4 +154,6 @@ void	free_content(void *content);
 /* Function to handle SIGINT signals for main process */
 void	handle_sigint(int sig);
 
+void	sig_and_exec(t_prompt *prompt, t_list *cmd);
+
 #endif

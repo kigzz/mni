@@ -19,7 +19,7 @@ LIBFT_FLAGS		=	-Llibft -lft
 
 #FILES AND PATH
 
-SRCS    		=	main.c handle_sigint.c builtins.c env.c error.c execution.c expansion.c fill_nodes.c \
+SRCS    		=	main.c handle_signal.c builtins.c env.c error.c execution.c expansion.c fill_nodes.c \
 					ft_cmd_split.c ft_cmd_trim.c ft_strtrim_all.c get_cmd.c get_parameters.c heredoc.c parse_arguments.c
 SRCS_DIR		=	srcs/
 SRCS_PATH		=	$(addprefix $(SRCS_DIR), $(SRCS))
