@@ -92,25 +92,6 @@ void	cd_error(char **str[2])
 		closedir(dir);
 }
 
-int	mini_echo_check(char *str)
-{
-	int	i;
-
-	if (str && !ft_strncmp(str, "-n", 2))
-	{
-		i = 2;
-		while (str[i])
-		{
-			if (str[i] != 'n')
-				return (1);
-			i++;
-		}
-	}
-	else
-		return (1);
-	return (0);
-}
-
 void	free_content(void *content)
 {
 	t_mini	*node;

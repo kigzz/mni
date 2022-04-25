@@ -17,5 +17,5 @@ add_executable(minishell2 srcs/main.c srcs/handle_signal.c includes/minishell.h 
         libft/ft_strncmp.c libft/ft_strnstr.c libft/ft_strtrim.c libft/ft_substr.c libft/ft_toupper.c libft/ft_tolower.c
         libft/get_next_line.c libft/libft.h libft/ft_isspace.c libft/ft_atoi2.c libft/ft_matrixlen.c
         libft/ft_matrix_extend.c libft/ft_matrix_dup.c libft/ft_matrix_free.c libft/ft_putmatrix_fd.c libft/ft_replace_in_matrix.c
-        libft/ft_strchr_char.c libft/ft_strchr_set.c libft/ft_strrchr.c)
+        libft/ft_strchr_char.c libft/ft_strchr_set.c libft/ft_strrchr.c srcs/builtins_utils.c)
 

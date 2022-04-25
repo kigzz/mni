@@ -61,44 +61,46 @@ char	**mini_setenv(char *var, char *value, char **envp, int n)
 	return (envp);
 }
 
-static int	var_in_envp(char *argv, char **envp, int ij[2])
+static int	var_in_envp(char *argv, char **envp, int i[2])
 {
 	int	pos;
 
-	ij[1] = 0;
+	i[1] = 0;
 	pos = ft_strchr_char(argv, '=');
 	if (pos == -1)
 		return (-1);
-	while (envp[ij[1]])
+	while (envp[i[1]])
 	{
-		if (!ft_strncmp(envp[ij[1]], argv, pos + 1))
+		if (!ft_strncmp(envp[i[1]], argv, pos + 1))
 			return (1);
-		ij[1]++;
+		i[1]++;
 	}
 	return (0);
 }
 
 int	mini_export(t_prompt *prompt)
 {
-	int		ij[2];
+	int		i[2];
 	int		pos;
 	char	**argv;
 
 	argv = ((t_mini *)prompt->cmds->content)->full_cmd;
+	for (int j = 0; j < ft_matrixlen(argv); j++)
+		printf("argv[%d] = %s\n", j, argv[j]);
 	if (ft_matrixlen(argv) >= 2)
 	{
-		ij[0] = 1;
-		while (argv[ij[0]])
+		i[0] = 1;
+		while (argv[i[0]])
 		{
-			pos = var_in_envp(argv[ij[0]], prompt->envp, ij);
+			pos = var_in_envp(argv[i[0]], prompt->envp, i);
 			if (pos == 1)
 			{
-				free(prompt->envp[ij[1]]);
-				prompt->envp[ij[1]] = ft_strdup(argv[ij[0]]);
+				free(prompt->envp[i[1]]);
+				prompt->envp[i[1]] = ft_strdup(argv[i[0]]);
 			}
 			else if (!pos)
-				prompt->envp = ft_matrix_extend(prompt->envp, argv[ij[0]]);
-			ij[0]++;
+				prompt->envp = ft_matrix_extend(prompt->envp, argv[i[0]]);
+			i[0]++;
 		}
 	}
 	return (0);
@@ -108,22 +110,22 @@ int	mini_unset(t_prompt *prompt)
 {
 	char	**argv;
 	char	*aux;
-	int		ij[2];
+	int		i[2];
 
-	ij[0] = 0;
+	i[0] = 0;
 	argv = ((t_mini *)prompt->cmds->content)->full_cmd;
 	if (ft_matrixlen(argv) >= 2)
 	{
-		while (argv[++ij[0]])
+		while (argv[++i[0]])
 		{
-			if (argv[ij[0]][ft_strlen(argv[ij[0]]) - 1] != '=')
+			if (argv[i[0]][ft_strlen(argv[i[0]]) - 1] != '=')
 			{
-				aux = ft_strjoin(argv[ij[0]], "=");
-				free(argv[ij[0]]);
-				argv[ij[0]] = aux;
+				aux = ft_strjoin(argv[i[0]], "=");
+				free(argv[i[0]]);
+				argv[i[0]] = aux;
 			}
-			if (var_in_envp(argv[ij[0]], prompt->envp, ij))
-				ft_replace_in_matrix(&prompt->envp, NULL, ij[1]);
+			if (var_in_envp(argv[i[0]], prompt->envp, i))
+				ft_replace_in_matrix(&prompt->envp, NULL, i[1]);
 		}
 	}
 	return (0);

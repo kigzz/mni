@@ -77,616 +77,468 @@ build CMakeFiles/minishell2.dir/srcs/main.c.o: C_COMPILER__minishell2_Debug /hom
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/srcs
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/srcs/handle_signal.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/srcs/handle_signal.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/srcs/handle_signal.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/srcs
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/srcs/builtins.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/srcs/builtins.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/srcs/builtins.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/srcs
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/srcs/env.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/srcs/env.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/srcs/env.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/srcs
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/srcs/error.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/srcs/error.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/srcs/error.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/srcs
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/srcs/execution.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/srcs/execution.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/srcs/execution.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/srcs
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/srcs/expansion.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/srcs/expansion.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/srcs/expansion.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/srcs
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/srcs/fill_nodes.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/srcs/fill_nodes.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/srcs/fill_nodes.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/srcs
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/srcs/get_cmd.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/srcs/get_cmd.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/srcs/get_cmd.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/srcs
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/srcs/ft_cmd_split.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/srcs/ft_cmd_split.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/srcs/ft_cmd_split.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/srcs
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/srcs/ft_cmd_trim.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/srcs/ft_cmd_trim.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/srcs/ft_cmd_trim.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/srcs
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/srcs/ft_strtrim_all.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/srcs/ft_strtrim_all.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/srcs/ft_strtrim_all.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/srcs
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/srcs/parse_arguments.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/srcs/parse_arguments.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/srcs/parse_arguments.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/srcs
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/srcs/get_parameters.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/srcs/get_parameters.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/srcs/get_parameters.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/srcs
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/srcs/heredoc.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/srcs/heredoc.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/srcs/heredoc.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/srcs
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_atoi.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_atoi.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_atoi.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_bzero.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_bzero.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_bzero.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_calloc.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_calloc.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_calloc.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_dlstadd_back.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_dlstadd_back.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_dlstadd_back.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_dlstadd_front.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_dlstadd_front.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_dlstadd_front.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_dlstfirst.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_dlstfirst.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_dlstfirst.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_dlstlast.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_dlstlast.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_dlstlast.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_dlstnew.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_dlstnew.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_dlstnew.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_dlstsize.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_dlstsize.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_dlstsize.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_isalnum.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_isalnum.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_isalnum.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_isalpha.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_isalpha.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_isalpha.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_isascii.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_isascii.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_isascii.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_isdigit.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_isdigit.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_isdigit.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_isprint.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_isprint.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_isprint.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_itoa.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_itoa.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_itoa.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_lstadd_front.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_lstadd_front.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_lstadd_front.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_lstadd_back.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_lstadd_back.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_lstadd_back.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_lstclear.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_lstclear.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_lstclear.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_lstdelone.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_lstdelone.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_lstdelone.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_lstiter.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_lstiter.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_lstiter.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_lstlast.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_lstlast.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_lstlast.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_lstmap.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_lstmap.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_lstmap.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_lstnew.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_lstnew.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_lstnew.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_lstsize.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_lstsize.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_lstsize.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_memccpy.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_memccpy.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_memccpy.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_memchr.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_memchr.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_memchr.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_memcmp.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_memcmp.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_memcmp.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_memcpy.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_memcpy.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_memcpy.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_memmove.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_memmove.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_memmove.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_memset.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_memset.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_memset.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_putchar_fd.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_putchar_fd.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_putchar_fd.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_putstr_fd.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_putstr_fd.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_putstr_fd.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_putendl_fd.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_putendl_fd.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_putendl_fd.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_putnbr_fd.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_putnbr_fd.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_putnbr_fd.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_split.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_split.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_split.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_strcat.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_strcat.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_strcat.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_strchr.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_strchr.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_strchr.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_strcpy.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_strcpy.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_strcpy.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_strdup.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_strdup.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_strdup.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_strjoin.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_strjoin.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_strjoin.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_strlcat.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_strlcat.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_strlcat.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_strlcpy.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_strlcpy.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_strlcpy.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_strlen.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_strlen.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_strlen.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_strmapi.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_strmapi.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_strmapi.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_strncmp.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_strncmp.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_strncmp.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_strnstr.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_strnstr.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_strnstr.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_strtrim.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_strtrim.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_strtrim.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_substr.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_substr.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_substr.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_toupper.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_toupper.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_toupper.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_tolower.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_tolower.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_tolower.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/get_next_line.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/get_next_line.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/get_next_line.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_isspace.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_isspace.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_isspace.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_atoi2.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_atoi2.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_atoi2.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_matrixlen.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_matrixlen.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_matrixlen.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_matrix_extend.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_matrix_extend.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_matrix_extend.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_matrix_dup.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_matrix_dup.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_matrix_dup.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_matrix_free.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_matrix_free.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_matrix_free.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_putmatrix_fd.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_putmatrix_fd.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_putmatrix_fd.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_replace_in_matrix.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_replace_in_matrix.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_replace_in_matrix.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_strchr_char.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_strchr_char.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_strchr_char.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_strchr_set.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_strchr_set.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_strchr_set.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
 
 build CMakeFiles/minishell2.dir/libft/ft_strrchr.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/libft/ft_strrchr.c || cmake_object_order_depends_target_minishell2
   DEP_FILE = CMakeFiles/minishell2.dir/libft/ft_strrchr.c.o.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/libft
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
-  TARGET_PDB = minishell2.pdb
+
+build CMakeFiles/minishell2.dir/srcs/builtins_utils.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/srcs/builtins_utils.c || cmake_object_order_depends_target_minishell2
+  DEP_FILE = CMakeFiles/minishell2.dir/srcs/builtins_utils.c.o.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles/minishell2.dir
+  OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/srcs
 
 
 # =============================================================================
@@ -696,14 +548,13 @@ build CMakeFiles/minishell2.dir/libft/ft_strrchr.c.o: C_COMPILER__minishell2_Deb
 #############################################
 # Link the executable minishell2
 
-build minishell2: C_EXECUTABLE_LINKER__minishell2_Debug CMakeFiles/minishell2.dir/srcs/main.c.o CMakeFiles/minishell2.dir/srcs/handle_signal.c.o CMakeFiles/minishell2.dir/srcs/builtins.c.o CMakeFiles/minishell2.dir/srcs/env.c.o CMakeFiles/minishell2.dir/srcs/error.c.o CMakeFiles/minishell2.dir/srcs/execution.c.o CMakeFiles/minishell2.dir/srcs/expansion.c.o CMakeFiles/minishell2.dir/srcs/fill_nodes.c.o CMakeFiles/minishell2.dir/srcs/get_cmd.c.o CMakeFiles/minishell2.dir/srcs/ft_cmd_split.c.o CMakeFiles/minishell2.dir/srcs/ft_cmd_trim.c.o CMakeFiles/minishell2.dir/srcs/ft_strtrim_all.c.o CMakeFiles/minishell2.dir/srcs/parse_arguments.c.o CMakeFiles/minishell2.dir/srcs/get_parameters.c.o CMakeFiles/minishell2.dir/srcs/heredoc.c.o CMakeFiles/minishell2.dir/libft/ft_atoi.c.o CMakeFiles/minishell2.dir/libft/ft_bzero.c.o CMakeFiles/minishell2.dir/libft/ft_calloc.c.o CMakeFiles/minishell2.dir/libft/ft_dlstadd_back.c.o CMakeFiles/minishell2.dir/libft/ft_dlstadd_front.c.o CMakeFiles/minishell2.dir/libft/ft_dlstfirst.c.o CMakeFiles/minishell2.dir/libft/ft_dlstlast.c.o CMakeFiles/minishell2.dir/libft/ft_dlstnew.c.o CMakeFiles/minishell2.dir/libft/ft_dlstsize.c.o CMakeFiles/minishell2.dir/libft/ft_isalnum.c.o CMakeFiles/minishell2.dir/libft/ft_isalpha.c.o CMakeFiles/minishell2.dir/libft/ft_isascii.c.o CMakeFiles/minishell2.dir/libft/ft_isdigit.c.o CMakeFiles/minishell2.dir/libft/ft_isprint.c.o CMakeFiles/minishell2.dir/libft/ft_itoa.c.o CMakeFiles/minishell2.dir/libft/ft_lstadd_front.c.o CMakeFiles/minishell2.dir/libft/ft_lstadd_back.c.o CMakeFiles/minishell2.dir/libft/ft_lstclear.c.o CMakeFiles/minishell2.dir/libft/ft_lstdelone.c.o CMakeFiles/minishell2.dir/libft/ft_lstiter.c.o CMakeFiles/minishell2.dir/libft/ft_lstlast.c.o CMakeFiles/minishell2.dir/libft/ft_lstmap.c.o CMakeFiles/minishell2.dir/libft/ft_lstnew.c.o CMakeFiles/minishell2.dir/libft/ft_lstsize.c.o CMakeFiles/minishell2.dir/libft/ft_memccpy.c.o CMakeFiles/minishell2.dir/libft/ft_memchr.c.o CMakeFiles/minishell2.dir/libft/ft_memcmp.c.o CMakeFiles/minishell2.dir/libft/ft_memcpy.c.o CMakeFiles/minishell2.dir/libft/ft_memmove.c.o CMakeFiles/minishell2.dir/libft/ft_memset.c.o CMakeFiles/minishell2.dir/libft/ft_putchar_fd.c.o CMakeFiles/minishell2.dir/libft/ft_putstr_fd.c.o CMakeFiles/minishell2.dir/libft/ft_putendl_fd.c.o CMakeFiles/minishell2.dir/libft/ft_putnbr_fd.c.o CMakeFiles/minishell2.dir/libft/ft_split.c.o CMakeFiles/minishell2.dir/libft/ft_strcat.c.o CMakeFiles/minishell2.dir/libft/ft_strchr.c.o CMakeFiles/minishell2.dir/libft/ft_strcpy.c.o CMakeFiles/minishell2.dir/libft/ft_strdup.c.o CMakeFiles/minishell2.dir/libft/ft_strjoin.c.o CMakeFiles/minishell2.dir/libft/ft_strlcat.c.o CMakeFiles/minishell2.dir/libft/ft_strlcpy.c.o CMakeFiles/minishell2.dir/libft/ft_strlen.c.o CMakeFiles/minishell2.dir/libft/ft_strmapi.c.o CMakeFiles/minishell2.dir/libft/ft_strncmp.c.o CMakeFiles/minishell2.dir/libft/ft_strnstr.c.o CMakeFiles/minishell2.dir/libft/ft_strtrim.c.o CMakeFiles/minishell2.dir/libft/ft_substr.c.o CMakeFiles/minishell2.dir/libft/ft_toupper.c.o CMakeFiles/minishell2.dir/libft/ft_tolower.c.o CMakeFiles/minishell2.dir/libft/get_next_line.c.o CMakeFiles/minishell2.dir/libft/ft_isspace.c.o CMakeFiles/minishell2.dir/libft/ft_atoi2.c.o CMakeFiles/minishell2.dir/libft/ft_matrixlen.c.o CMakeFiles/minishell2.dir/libft/ft_matrix_extend.c.o CMakeFiles/minishell2.dir/libft/ft_matrix_dup.c.o CMakeFiles/minishell2.dir/libft/ft_matrix_free.c.o CMakeFiles/minishell2.dir/libft/ft_putmatrix_fd.c.o CMakeFiles/minishell2.dir/libft/ft_replace_in_matrix.c.o CMakeFiles/minishell2.dir/libft/ft_strchr_char.c.o CMakeFiles/minishell2.dir/libft/ft_strchr_set.c.o CMakeFiles/minishell2.dir/libft/ft_strrchr.c.o
+build minishell2: C_EXECUTABLE_LINKER__minishell2_Debug CMakeFiles/minishell2.dir/srcs/main.c.o CMakeFiles/minishell2.dir/srcs/handle_signal.c.o CMakeFiles/minishell2.dir/srcs/builtins.c.o CMakeFiles/minishell2.dir/srcs/env.c.o CMakeFiles/minishell2.dir/srcs/error.c.o CMakeFiles/minishell2.dir/srcs/execution.c.o CMakeFiles/minishell2.dir/srcs/expansion.c.o CMakeFiles/minishell2.dir/srcs/fill_nodes.c.o CMakeFiles/minishell2.dir/srcs/get_cmd.c.o CMakeFiles/minishell2.dir/srcs/ft_cmd_split.c.o CMakeFiles/minishell2.dir/srcs/ft_cmd_trim.c.o CMakeFiles/minishell2.dir/srcs/ft_strtrim_all.c.o CMakeFiles/minishell2.dir/srcs/parse_arguments.c.o CMakeFiles/minishell2.dir/srcs/get_parameters.c.o CMakeFiles/minishell2.dir/srcs/heredoc.c.o CMakeFiles/minishell2.dir/libft/ft_atoi.c.o CMakeFiles/minishell2.dir/libft/ft_bzero.c.o CMakeFiles/minishell2.dir/libft/ft_calloc.c.o CMakeFiles/minishell2.dir/libft/ft_dlstadd_back.c.o CMakeFiles/minishell2.dir/libft/ft_dlstadd_front.c.o CMakeFiles/minishell2.dir/libft/ft_dlstfirst.c.o CMakeFiles/minishell2.dir/libft/ft_dlstlast.c.o CMakeFiles/minishell2.dir/libft/ft_dlstnew.c.o CMakeFiles/minishell2.dir/libft/ft_dlstsize.c.o CMakeFiles/minishell2.dir/libft/ft_isalnum.c.o CMakeFiles/minishell2.dir/libft/ft_isalpha.c.o CMakeFiles/minishell2.dir/libft/ft_isascii.c.o CMakeFiles/minishell2.dir/libft/ft_isdigit.c.o CMakeFiles/minishell2.dir/libft/ft_isprint.c.o CMakeFiles/minishell2.dir/libft/ft_itoa.c.o CMakeFiles/minishell2.dir/libft/ft_lstadd_front.c.o CMakeFiles/minishell2.dir/libft/ft_lstadd_back.c.o CMakeFiles/minishell2.dir/libft/ft_lstclear.c.o CMakeFiles/minishell2.dir/libft/ft_lstdelone.c.o CMakeFiles/minishell2.dir/libft/ft_lstiter.c.o CMakeFiles/minishell2.dir/libft/ft_lstlast.c.o CMakeFiles/minishell2.dir/libft/ft_lstmap.c.o CMakeFiles/minishell2.dir/libft/ft_lstnew.c.o CMakeFiles/minishell2.dir/libft/ft_lstsize.c.o CMakeFiles/minishell2.dir/libft/ft_memccpy.c.o CMakeFiles/minishell2.dir/libft/ft_memchr.c.o CMakeFiles/minishell2.dir/libft/ft_memcmp.c.o CMakeFiles/minishell2.dir/libft/ft_memcpy.c.o CMakeFiles/minishell2.dir/libft/ft_memmove.c.o CMakeFiles/minishell2.dir/libft/ft_memset.c.o CMakeFiles/minishell2.dir/libft/ft_putchar_fd.c.o CMakeFiles/minishell2.dir/libft/ft_putstr_fd.c.o CMakeFiles/minishell2.dir/libft/ft_putendl_fd.c.o CMakeFiles/minishell2.dir/libft/ft_putnbr_fd.c.o CMakeFiles/minishell2.dir/libft/ft_split.c.o CMakeFiles/minishell2.dir/libft/ft_strcat.c.o CMakeFiles/minishell2.dir/libft/ft_strchr.c.o CMakeFiles/minishell2.dir/libft/ft_strcpy.c.o CMakeFiles/minishell2.dir/libft/ft_strdup.c.o CMakeFiles/minishell2.dir/libft/ft_strjoin.c.o CMakeFiles/minishell2.dir/libft/ft_strlcat.c.o CMakeFiles/minishell2.dir/libft/ft_strlcpy.c.o CMakeFiles/minishell2.dir/libft/ft_strlen.c.o CMakeFiles/minishell2.dir/libft/ft_strmapi.c.o CMakeFiles/minishell2.dir/libft/ft_strncmp.c.o CMakeFiles/minishell2.dir/libft/ft_strnstr.c.o CMakeFiles/minishell2.dir/libft/ft_strtrim.c.o CMakeFiles/minishell2.dir/libft/ft_substr.c.o CMakeFiles/minishell2.dir/libft/ft_toupper.c.o CMakeFiles/minishell2.dir/libft/ft_tolower.c.o CMakeFiles/minishell2.dir/libft/get_next_line.c.o CMakeFiles/minishell2.dir/libft/ft_isspace.c.o CMakeFiles/minishell2.dir/libft/ft_atoi2.c.o CMakeFiles/minishell2.dir/libft/ft_matrixlen.c.o CMakeFiles/minishell2.dir/libft/ft_matrix_extend.c.o CMakeFiles/minishell2.dir/libft/ft_matrix_dup.c.o CMakeFiles/minishell2.dir/libft/ft_matrix_free.c.o CMakeFiles/minishell2.dir/libft/ft_putmatrix_fd.c.o CMakeFiles/minishell2.dir/libft/ft_replace_in_matrix.c.o CMakeFiles/minishell2.dir/libft/ft_strchr_char.c.o CMakeFiles/minishell2.dir/libft/ft_strchr_set.c.o CMakeFiles/minishell2.dir/libft/ft_strrchr.c.o CMakeFiles/minishell2.dir/srcs/builtins_utils.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/minishell2.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/minishell2.dir/
   TARGET_FILE = minishell2
-  TARGET_PDB = minishell2.pdb
+  TARGET_PDB = minishell2.dbg
 
 # =============================================================================
 # Target aliases.
@@ -725,14 +576,14 @@ build all: phony minishell2
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCCompiler.cmake.in /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCCompilerABI.c /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCompilerIdDetection.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCompileFeatures.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCompilerABI.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCompilerId.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineSystem.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeFindBinUtils.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseImplicitIncludeInfo.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseImplicitLinkInfo.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseLibraryArchitecture.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystem.cmake.in /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeTestCCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeTestCompilerCommon.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/ADSP-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/ARMCC-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/ARMClang-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/AppleClang-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Borland-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Clang-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Cray-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GHS-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-FindBinUtils.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/HP-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/IAR-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Intel-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/MSVC-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/NVHPC-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/PGI-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/PathScale-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/ROCMClang-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/SCO-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/TI-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Watcom-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/XL-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/zOS-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Internal/FeatureTesting.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCCompiler.cmake.in /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCCompilerABI.c /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCompilerIdDetection.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCompileFeatures.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCompilerABI.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineCompilerId.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeDetermineSystem.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeFindBinUtils.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseImplicitIncludeInfo.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseImplicitLinkInfo.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeParseLibraryArchitecture.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystem.cmake.in /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeTestCCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeTestCompilerCommon.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/ADSP-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/ARMCC-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/ARMClang-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/AppleClang-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Borland-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Clang-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Cray-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GHS-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-FindBinUtils.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/HP-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/IAR-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Intel-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/MSVC-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/NVHPC-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/PGI-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/PathScale-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/ROCMClang-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/SCO-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/TI-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/Watcom-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/XL-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/zOS-C-DetermineCompiler.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Internal/FeatureTesting.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCInformation.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeCommonLanguageInclude.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeGenericSystem.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeInitializeConfigs.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeLanguageInformation.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInformation.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/CMakeSystemSpecificInitialize.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU-C.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Compiler/GNU.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU-C.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux-GNU.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Platform/Linux.cmake /home/bpouchep/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/bin/cmake/linux/share/cmake-3.21/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.21.1/CMakeCCompiler.cmake CMakeFiles/3.21.1/CMakeSystem.cmake: phony
 
 
 #############################################
