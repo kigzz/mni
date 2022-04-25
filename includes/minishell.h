@@ -54,9 +54,8 @@ enum	e_mini_error
 	FORKERR = 8,
 	PIPERR = 9,
 	PIPENDERR = 10,
-	MEM = 11,
-	IS_DIR = 12,
-	NOT_DIR = 13
+	IS_DIR = 11,
+	NOT_DIR = 12
 };
 
 void	ft_replace_tabs_returns(char *str);
@@ -78,6 +77,8 @@ int		mini_pwd(void);
 
 /* C implementation of the echo shell command */
 int		mini_echo(t_list *cmd);
+
+int		mini_echo_check(char *str);
 
 /* C implementation of the export shell command */
 int		mini_export(t_prompt *prompt);

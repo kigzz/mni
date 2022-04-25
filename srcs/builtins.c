@@ -119,7 +119,7 @@ int	mini_echo(t_list *cmd)
 	argv = node->full_cmd;
 	while (argv && argv[++i[0]])
 	{
-		if (!i[1] && !ft_strncmp(argv[i[0]], "-n", 3))
+		if (!i[1] && !mini_echo_check(argv[i[0]]))
 			newline = 0;
 		else
 		{

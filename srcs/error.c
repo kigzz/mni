@@ -31,8 +31,6 @@ void	*mini_perror(int err_type, char *param, int err)
 		ft_putstr_fd("minishell: error creating pipe\n", 2);
 	else if (err_type == PIPENDERR)
 		ft_putstr_fd("minishell: syntax error near unexpected token `|'\n", 2);
-	else if (err_type == MEM)
-		ft_putstr_fd("minishell: no memory left on device\n", 2);
 	else if (err_type == IS_DIR)
 		ft_putstr_fd("minishell: Is a directory: ", 2);
 	else if (err_type == NOT_DIR)
@@ -92,6 +90,25 @@ void	cd_error(char **str[2])
 		mini_perror(NOT_DIR, str[0][1], 1);
 	if (str[0][1] && dir)
 		closedir(dir);
+}
+
+int	mini_echo_check(char *str)
+{
+	int	i;
+
+	if (str && !ft_strncmp(str, "-n", 2))
+	{
+		i = 2;
+		while (str[i])
+		{
+			if (str[i] != 'n')
+				return (1);
+			i++;
+		}
+	}
+	else
+		return (1);
+	return (0);
 }
 
 void	free_content(void *content)

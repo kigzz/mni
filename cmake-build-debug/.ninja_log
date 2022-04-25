@@ -1,5 +1,3 @@
 # ninja log v5
 1	78	1650194205052365135	CMakeFiles/minishell2.dir/libft/ft_putstr_fd.c.o	670a1486c677bb21
-1	78	1650194205052365135	CMakeFiles/minishell2.dir/functions/hdle_sigint.c.o	d50bf56562d3b11f
 1	85	1650194205056365139	CMakeFiles/minishell2.dir/libft/ft_strlen.c.o	4f74fb053d209459
-0	70	1650194205044365125	CMakeFiles/minishell2.dir/main.c.o	2c37cc013d20b686

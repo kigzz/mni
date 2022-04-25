@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/bpouchep/CLionProjects/minishell2/cmake-build-debug"
+			"value" : "/home/bpouchep/CLionProjects/minishell3/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -451,7 +451,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/bpouchep/CLionProjects/minishell2"
+			"value" : "/home/bpouchep/CLionProjects/minishell3"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -983,7 +983,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bpouchep/CLionProjects/minishell2/cmake-build-debug"
+			"value" : "/home/bpouchep/CLionProjects/minishell3/cmake-build-debug"
 		},
 		{
 			"name" : "minishell2_IS_TOP_LEVEL",
@@ -1007,7 +1007,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/bpouchep/CLionProjects/minishell2"
+			"value" : "/home/bpouchep/CLionProjects/minishell3"
 		}
 	],
 	"kind" : "cache",

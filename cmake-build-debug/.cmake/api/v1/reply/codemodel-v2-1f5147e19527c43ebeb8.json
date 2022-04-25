@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/bpouchep/CLionProjects/minishell2/cmake-build-debug",
-		"source" : "/home/bpouchep/CLionProjects/minishell2"
+		"build" : "/home/bpouchep/CLionProjects/minishell3/cmake-build-debug",
+		"source" : "/home/bpouchep/CLionProjects/minishell3"
 	},
 	"version" : 
 	{
