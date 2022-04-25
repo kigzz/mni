@@ -29,22 +29,22 @@ OBJ_SRCS    	=	$(SRCS_PATH:%.c=%.o)
 # RULES
 
 %.o : %.c
-					@$(CC) $(FLAGS) -c $< -o $@
+					$(CC) $(FLAGS) -c $< -o $@
 
 all:				$(NAME)
 
 $(NAME):			$(OBJ_SRCS)
-					@make -C $(LIBFT_DIR)
-					@$(CC) $(FLAGS) $(OBJ_SRCS) $(LIBFT_FLAGS) -lreadline -o $(NAME)
+					make -C $(LIBFT_DIR)
+					$(CC) $(FLAGS) $(OBJ_SRCS) $(LIBFT_FLAGS) -lreadline -o $(NAME)
 
 clean:
-					@$(RM) $(OBJ_SRCS)
-					@$(RM) $(OBJ_SRCS_BONUS)
-					@make clean -C $(LIBFT_DIR)
+					$(RM) $(OBJ_SRCS)
+					$(RM) $(OBJ_SRCS_BONUS)
+					make clean -C $(LIBFT_DIR)
 
 fclean:				clean
-					@$(RM) $(NAME) $(NAME_BONUS)
-					@make fclean -C libft
+					$(RM) $(NAME) $(NAME_BONUS)
+					make fclean -C libft
 
 re:					fclean all
 
