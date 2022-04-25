@@ -81,10 +81,13 @@ void	*check_args(char *out, t_prompt *p)
 	a = ft_cmd_trim(out, " ");
 	free(out);
 	if (!a)
-	{
 		mini_perror(QUOTE, NULL, 1);
+	if (!a)
 		return ("");
-	}
+	if (a[0] && a[0][0] == '|')
+		mini_perror(PIPENDERR, NULL, 1);
+	if (a[0] && a[0][0] == '|')
+		return ("");
 	p = parse_args(a, p);
 	if (p && p->cmds)
 		n = p->cmds->content;
