@@ -85,13 +85,13 @@ int	mini_export(t_prompt *prompt)
 	char	**argv;
 
 	argv = ((t_mini *)prompt->cmds->content)->full_cmd;
-	for (int j = 0; j < ft_matrixlen(argv); j++)
-		printf("argv[%d] = %s\n", j, argv[j]);
 	if (ft_matrixlen(argv) >= 2)
 	{
-		i[0] = 1;
+		i[0] = 0;
 		while (argv[i[0]])
 		{
+			if (mini_export_check(argv[i[0]]) == 1)
+				return (1);
 			pos = var_in_envp(argv[i[0]], prompt->envp, i);
 			if (pos == 1)
 			{

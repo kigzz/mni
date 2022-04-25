@@ -30,3 +30,25 @@ int	mini_echo_check(char *str)
 		return (1);
 	return (0);
 }
+
+int	mini_export_check(char *str)
+{
+	int	i;
+
+	i = 0;
+	if (str[i] == '=')
+	{
+		printf("minishell: export: `%s': not a valid identifier\n", str);
+		return (1);
+	}
+	while (str[i] && str[i] != '=')
+	{
+		if (ft_isalnum(str[i]) == 0)
+		{
+			printf("minishell: export: `%s': not a valid identifier\n", str);
+			return (1);
+		}
+		i++;
+	}
+	return (0);
+}

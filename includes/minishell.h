@@ -83,6 +83,8 @@ int		mini_echo_check(char *str);
 /* C implementation of the export shell command */
 int		mini_export(t_prompt *prompt);
 
+int		mini_export_check(char *str);
+
 /* C implementation of the unset shell command */
 int		mini_unset(t_prompt *prompt);
 
