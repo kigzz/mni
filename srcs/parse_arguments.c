@@ -85,7 +85,7 @@ void	*check_args(char *out, t_prompt *p)
 	if (!a)
 		return ("");
 	if (a[0] && a[0][0] == '|')
-		mini_perror(PIPENDERR, NULL, 1);
+		mini_perror(PIPENDERR, NULL, 2);
 	if (a[0] && a[0][0] == '|')
 		return ("");
 	p = parse_args(a, p);
