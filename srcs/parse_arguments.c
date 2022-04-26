@@ -71,6 +71,15 @@ static int	output_check(char *out, t_prompt *p)
 	return (0);
 }
 
+static void	last_cmd(t_prompt *p, t_mini *n)
+{
+	if (p && p->cmds && n && n->full_cmd && ft_lstsize(p->cmds) == 1)
+		p->envp = mini_setenv("_", n->full_cmd[ft_matrixlen(n->full_cmd) - 1], \
+			p->envp, 1);
+	if (p && p->cmds)
+		ft_lstclear(&p->cmds, free_content);
+}
+
 void	*check_args(char *out, t_prompt *p)
 {
 	char	**a;
@@ -81,20 +90,19 @@ void	*check_args(char *out, t_prompt *p)
 	a = ft_cmd_trim(out, " ");
 	free(out);
 	if (!a)
+	{
 		mini_perror(QUOTE, NULL, 1);
-	if (!a)
 		return ("");
+	}
 	if (a[0] && a[0][0] == '|')
+	{
 		mini_perror(PIPENDERR, NULL, 2);
-	if (a[0] && a[0][0] == '|')
+		ft_matrix_free(&a);
 		return ("");
+	}
 	p = parse_args(a, p);
 	if (p && p->cmds)
 		n = p->cmds->content;
-	if (p && p->cmds && n && n->full_cmd && ft_lstsize(p->cmds) == 1)
-		p->envp = mini_setenv("_", n->full_cmd[ft_matrixlen(n->full_cmd) - 1], \
-			p->envp, 1);
-	if (p && p->cmds)
-		ft_lstclear(&p->cmds, free_content);
+	last_cmd(p, n);
 	return (p);
 }
