@@ -49,7 +49,7 @@ int	mini_exit(t_list *cmd, int *is_exit)
 	if (*is_exit)
 		ft_putstr_fd("exit\n", 2);
 	if (!node->full_cmd || !node->full_cmd[1])
-		return (0);
+		return (g_status);
 	status[1] = ft_atoi2(node->full_cmd[1], &status[0]);
 	if (status[1] == -1)
 	{
