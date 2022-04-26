@@ -6,7 +6,7 @@
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 13:53:54 by bpouchep          #+#    #+#             */
-/*   Updated: 2022/04/19 13:53:54 by bpouchep         ###   ########.fr       */
+/*   Updated: 2022/04/26 19:43:28 by dalitt           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ void	*check_args(char *out, t_prompt *p)
 		mini_perror(QUOTE, NULL, 1);
 		return ("");
 	}
-	if (a[0] && a[0][0] == '|')
+	if (!check_piperr(a))
 	{
 		mini_perror(PIPENDERR, NULL, 2);
 		ft_matrix_free(&a);
