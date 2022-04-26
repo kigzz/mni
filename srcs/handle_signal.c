@@ -24,9 +24,20 @@ void	handle_sigint(int sig)
 	}
 }
 
+static void handle_sigint2(int sig)
+{
+	if (sig == SIGINT)
+	{
+		g_status = 0;
+		ft_putstr_fd("\n", 1);
+		rl_replace_line("", 0);
+		rl_on_new_line();
+	}
+}
+
 void	sig_and_exec(t_prompt *prompt, t_list *cmd)
 {
-	signal(SIGINT, SIG_IGN);
+	signal(SIGINT, handle_sigint2);
 	signal(SIGQUIT, SIG_IGN);
 	exec_cmd(prompt, cmd);
 }
