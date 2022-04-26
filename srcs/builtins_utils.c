@@ -36,7 +36,7 @@ int	mini_export_check(char *str)
 	int	i;
 
 	i = 0;
-	if (str[i] == '=')
+	if (str[i] == '=' || ft_isdigit(str[i]))
 	{
 		printf("minishell: export: `%s': not a valid identifier\n", str);
 		return (1);
