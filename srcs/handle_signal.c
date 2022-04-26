@@ -28,7 +28,6 @@ static void handle_sigint2(int sig)
 {
 	if (sig == SIGINT)
 	{
-		g_status = 0;
 		ft_putstr_fd("\n", 1);
 		rl_replace_line("", 0);
 		rl_on_new_line();
