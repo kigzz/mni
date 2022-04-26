@@ -6,7 +6,7 @@
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 14:47:28 by bpouchep          #+#    #+#             */
-/*   Updated: 2022/04/26 14:04:51 by dalitt           ###   ########.fr       */
+/*   Updated: 2022/04/26 19:44:06 by dalitt           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,7 @@ enum	e_mini_error
 	NOT_DIR = 12
 };
 
+int		check_piperr(char **a);
 void	ft_replace_tabs_returns(char *str);
 int		builtin(t_prompt *prompt, t_list *cmd, int *is_exit, int n);
 int		is_builtin(t_mini *n);

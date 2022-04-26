@@ -6,11 +6,37 @@
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 13:50:54 by bpouchep          #+#    #+#             */
-/*   Updated: 2022/04/19 13:50:55 by bpouchep         ###   ########.fr       */
+/*   Updated: 2022/04/26 19:42:18 by dalitt           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/minishell.h"
+
+int	check_piperr(char **a)
+{
+	int	i;
+
+	if (!a[0])
+		return (1);
+	if (a[0][0] == '|')
+		return (0);
+	i = 0;
+	while (a[i])
+	{
+		if ((!ft_strncmp(">", a[i], 1) || !ft_strncmp("<", a[i], 1)
+			|| !ft_strncmp(">>", a[i], 2) || !ft_strncmp("<<", a[i], 2))
+			&& (a[i + 1] && ft_strchr("<|>", a[i + 1][0])))
+			return (0);
+		if ((!ft_strncmp(">", a[i], 1) || !ft_strncmp("<", a[i], 1))
+			&& a[i][1] && a[i][0] != a[i][1] && ft_strchr("<|>", a[i][1]))
+			return (0);
+		if (a[i][1] && (!ft_strncmp(">>", a[i], 2) || !ft_strncmp("<<", a[i], 2))
+			&& a[i][2] && ft_strchr("<|>", a[i][2]))
+			return (0);
+		i++;
+	}
+	return (1);
+}
 
 void	*mini_perror(int err_type, char *param, int err)
 {
