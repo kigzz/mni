@@ -52,3 +52,20 @@ int	mini_export_check(char *str)
 	}
 	return (0);
 }
+
+int	mini_unset_check(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+	{
+		if (ft_isalnum(str[i]) == 0)
+		{
+			printf("minishell: unset: `%s': not a valid identifier\n", str);
+			return (1);
+		}
+		i++;
+	}
+	return (0);
+}

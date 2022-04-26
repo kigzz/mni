@@ -118,6 +118,8 @@ int	mini_unset(t_prompt *prompt)
 	{
 		while (argv[++i[0]])
 		{
+			if (mini_unset_check(argv[i[0]]) == 1)
+				return (1);
 			if (argv[i[0]][ft_strlen(argv[i[0]]) - 1] != '=')
 			{
 				aux = ft_strjoin(argv[i[0]], "=");

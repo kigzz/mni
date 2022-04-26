@@ -59,7 +59,6 @@ enum	e_mini_error
 };
 
 void	ft_replace_tabs_returns(char *str);
-
 int		builtin(t_prompt *prompt, t_list *cmd, int *is_exit, int n);
 int		is_builtin(t_mini *n);
 int		mini_cd(t_prompt *prompt);
@@ -70,6 +69,7 @@ int		mini_echo_check(char *str);
 int		mini_export(t_prompt *prompt);
 int		mini_export_check(char *str);
 int		mini_unset(t_prompt *prompt);
+int		mini_unset_check(char *str);
 int		mini_exit(t_list *cmd, int *is_exit);
 void	*check_args(char *out, t_prompt *p);
 char	**ft_cmd_trim(char const *s, char *set);
