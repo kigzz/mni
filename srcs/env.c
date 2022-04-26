@@ -87,7 +87,7 @@ int	mini_export(t_prompt *prompt)
 	argv = ((t_mini *)prompt->cmds->content)->full_cmd;
 	if (ft_matrixlen(argv) >= 2)
 	{
-		i[0] = 0;
+		i[0] = 1;
 		while (argv[i[0]])
 		{
 			if (mini_export_check(argv[i[0]]) == 1)
