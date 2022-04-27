@@ -20,7 +20,7 @@ char	*mini_getenv(char *var, char **envp, int n)
 	i = 0;
 	if (n < 0)
 		n = ft_strlen(var);
-	while (!ft_strchr(var, '=') && envp && envp[i])
+	while (envp && envp[i])
 	{
 		n2 = n;
 		if (n2 < ft_strchr_char(envp[i], '='))

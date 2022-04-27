@@ -85,6 +85,8 @@ t_list	*fill_nodes(char **args, int i)
 
 	cmds[0] = NULL;
 	temp[1] = get_trimmed(args);
+//	for (int i = 0; i < ft_matrixlen(args); i++/)
+//		printf("fill nodes | args = %s\n", args[i]);
 	while (args[++i])
 	{
 		cmds[1] = ft_lstlast(cmds[0]);

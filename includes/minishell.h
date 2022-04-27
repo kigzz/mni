@@ -93,7 +93,7 @@ void	*mini_perror(int err_type, char *param, int err);
 char	*mini_getenv(char	*var, char **envp, int n);
 char	**mini_setenv(char *var, char *value, char **envp, int n);
 void	free_content(void *content);
-void	handle_sigint(int sig);
+void	handle_signal(int sig);
 void	sig_and_exec(t_prompt *prompt, t_list *cmd);
 
 #endif

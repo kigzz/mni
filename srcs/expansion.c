@@ -38,6 +38,7 @@ char	*expand_path(char *str, int i, int quotes[2], char *var)
 		}
 	}
 	free(var);
+	printf("expand path : str = %s\n", str);
 	return (str);
 }
 
@@ -48,17 +49,24 @@ static char	*get_substr_var(char *str, int i, t_prompt *prompt)
 	char	*path;
 	char	*var;
 
-	pos = ft_strchr_set(&str[i], "|\"\'$?>< ") + (ft_strchr("$?", str[i]) != 0);
+	pos = ft_strchr_set(&str[i], "|\"\'$?>< /=") + (ft_strchr("$?", str[i]) != 0);
+//	printf("pos = %d\n", pos);
 	if (pos == -1)
 		pos = ft_strlen(str) - 1;
+//	printf("str = %s\n", str);
 	aux = ft_substr(str, 0, i - 1);
+//	printf("aux start = %s\n", aux);
 	var = mini_getenv(&str[i], prompt->envp, \
-		ft_strchr_set(&str[i], "\"\'$|>< "));
+		ft_strchr_set(&str[i], "\"\'$|></="));
+					  // C'EST ICI PUTAIN
+//	printf("var = %s\n", var);
 	if (!var && str[i] == '?')
 		var = ft_itoa(g_status);
 	path = ft_strjoin(aux, var);
+//	printf("path = %s\n", path);
 	free(aux);
 	aux = ft_strjoin(path, &str[i + pos]);
+//	printf("aux end = %s\n", aux);
 	free(var);
 	free(path);
 	free(str);
@@ -79,5 +87,6 @@ char	*expand_vars(char *str, int i, int quotes[2], t_prompt *prompt)
 			return (expand_vars(get_substr_var(str, ++i, prompt), -1, \
 				quotes, prompt));
 	}
+//	printf("expand vars : str = %s\n", str);
 	return (str);
 }

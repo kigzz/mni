@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   handle_sigint.c                                    :+:      :+:    :+:   */
+/*   handle_signal.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,7 +12,7 @@
 
 #include "../includes/minishell.h"
 
-void	handle_sigint(int sig)
+void	handle_signal(int sig)
 {
 	if (sig == SIGINT)
 	{
@@ -24,7 +24,7 @@ void	handle_sigint(int sig)
 	}
 }
 
-static void handle_sigint2(int sig)
+static void handle_sigint_exec(int sig)
 {
 	if (sig == SIGINT)
 	{
@@ -36,7 +36,7 @@ static void handle_sigint2(int sig)
 
 void	sig_and_exec(t_prompt *prompt, t_list *cmd)
 {
-	signal(SIGINT, handle_sigint2);
+	signal(SIGINT, handle_sigint_exec);
 	signal(SIGQUIT, SIG_IGN);
 	exec_cmd(prompt, cmd);
 }

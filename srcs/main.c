@@ -67,7 +67,7 @@ int	main(int argc, char **argv, char **envp)
 	prompt = init_prompt(argv, envp);
 	while (argc && argv)
 	{
-		signal(SIGINT, handle_sigint);
+		signal(SIGINT, handle_signal);
 		signal(SIGQUIT, SIG_IGN);
 		output = readline("$> ");
 		if (!check_args(output, &prompt))

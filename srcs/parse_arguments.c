@@ -19,16 +19,21 @@ static char	**split_all(char **args, t_prompt *prompt)
 	int		quotes[2];
 
 	i = -1;
+//	for (int i = 0; i < ft_matrixlen(args); i++)
+//		printf("split all | args = %s\n", args[i]);
 	while (args && args[++i])
 	{
 		args[i] = expand_vars(args[i], -1, quotes, prompt);
-		args[i] = expand_path(args[i], -1, quotes, \
-			mini_getenv("HOME", prompt->envp, 4));
+//		printf("expand vars | args = %s\n", args[i]);
+//		args[i] = expand_path(args[i], -1, quotes, mini_getenv("HOME", prompt->envp, 4));
+//		printf("expand path | args = %s\n", args[i]);
 		subsplit = ft_cmd_split(args[i], "<|>");
 		ft_replace_in_matrix(&args, subsplit, i);
 		i += ft_matrixlen(subsplit) - 1;
 		ft_matrix_free(&subsplit);
 	}
+//	for (int i = 0; i < ft_matrixlen(args); i++)
+//		printf("split all | args = %s\n", args[i]);
 	return (args);
 }
 
@@ -44,7 +49,7 @@ static void	*parse_args(char **args, t_prompt *p)
 	i = ft_lstsize(p->cmds);
 	g_status = builtin(p, p->cmds, &is_exit, 0);
 	while (i-- > 0)
-		waitpid(-1, &g_status, 0);
+		waitpid(-1, &g_status, g_status);
 	if (!is_exit && g_status == 13)
 		g_status = 0;
 	if (g_status > 255)

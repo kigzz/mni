@@ -58,6 +58,11 @@ int	mini_unset_check(char *str)
 	int	i;
 
 	i = 0;
+	if (ft_isdigit(str[i]))
+	{
+		printf("minishell: unset: `%s': not a valid identifier\n", str);
+		return (1);
+	}
 	while (str[i])
 	{
 		if (ft_isalnum(str[i]) == 0)
