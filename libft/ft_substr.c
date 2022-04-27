@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/25 05:37:20 by bpouchep          #+#    #+#             */
-/*   Updated: 2022/01/25 05:37:32 by bpouchep         ###   ########.fr       */
+/*   Created: 2020/07/15 20:26:54 by bpouchep          #+#    #+#             */
+/*   Updated: 2020/07/15 20:27:00 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	size_t	s_len;
 	char	*substr;

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/15 20:58:40 by bpouchep          #+#    #+#             */
-/*   Updated: 2020/07/15 20:58:51 by bpouchep         ###   ########.fr       */
+/*   Created: 2020/07/15 20:26:07 by bpouchep          #+#    #+#             */
+/*   Updated: 2020/07/15 20:27:10 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,22 +15,19 @@
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
 	char	*str;
-	int		s_len;
 	int		i;
 
 	i = 0;
-	s_len = ft_strlen(s);
-	str = (char *)malloc(sizeof(char) * (s_len + 1));
+	if (!s)
+		return (NULL);
+	str = (char *)malloc(ft_strlen(s) + 1);
 	if (!str)
 		return (NULL);
-	else
+	while (s[i] != '\0')
 	{
-		while (i < s_len)
-		{
-			str[i] = (*f)(i, s[i]);
-			i++;
-		}
-		str[i] = '\0';
-		return (str);
+		str[i] = f(i, s[i]);
+		i++;
 	}
+	str[i] = '\0';
+	return (str);
 }

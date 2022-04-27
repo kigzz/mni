@@ -38,7 +38,6 @@ char	*expand_path(char *str, int i, int quotes[2], char *var)
 		}
 	}
 	free(var);
-	printf("expand path : str = %s\n", str);
 	return (str);
 }
 

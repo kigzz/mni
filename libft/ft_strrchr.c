@@ -5,35 +5,29 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/15 20:26:30 by bpouchep          #+#    #+#             */
-/*   Updated: 2020/07/15 20:26:34 by bpouchep         ###   ########.fr       */
+/*   Created: 2020/07/15 20:26:34 by bpouchep          #+#    #+#             */
+/*   Updated: 2020/07/15 20:26:38 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *str, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
-	int	j;
-	int	k;
+	int				last;
+	unsigned char	c_unsigned;
 
-	i = 0;
-	j = 0;
-	k = 0;
-	while (str[i] != '\0')
+	c_unsigned = (unsigned char)c;
+	if (c_unsigned == '\0')
+		return ((char *)&s[ft_strlen(s)]);
+	last = ft_strlen(s) - 1;
+	if (last < 0)
+		return (NULL);
+	while (last >= 0)
 	{
-		if (str[i] == (char)c)
-		{
-			j = i;
-			k = 1;
-		}
-		i++;
+		if (s[last] == c_unsigned)
+			return ((char *)&s[last]);
+		last--;
 	}
-	if (j >= 0 && k == 1)
-		return ((char *)&str[j]);
-	else if ((char)c == '\0')
-		return ((char *)&str[i]);
-	else
-		return (0);
+	return (NULL);
 }

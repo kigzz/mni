@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/17 16:18:05 by bpouchep          #+#    #+#             */
-/*   Updated: 2020/07/17 16:18:13 by bpouchep         ###   ########.fr       */
+/*   Created: 2020/07/15 20:22:29 by bpouchep          #+#    #+#             */
+/*   Updated: 2020/07/15 20:22:36 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	if (lst != NULL && del != NULL)
-	{
-		del(lst->content);
-		free(lst);
-	}
+	del(lst->content);
+	free(lst);
 }

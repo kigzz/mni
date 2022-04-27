@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/22 17:15:01 by bpouchep          #+#    #+#             */
-/*   Updated: 2020/07/22 17:15:17 by bpouchep         ###   ########.fr       */
+/*   Created: 2020/07/15 20:22:40 by bpouchep          #+#    #+#             */
+/*   Updated: 2020/07/15 20:22:47 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	while (lst != NULL && f != NULL)
+	while (lst)
 	{
 		f(lst->content);
 		lst = lst->next;

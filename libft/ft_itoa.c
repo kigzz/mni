@@ -5,29 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/15 21:57:05 by bpouchep          #+#    #+#             */
-/*   Updated: 2020/07/15 21:57:13 by bpouchep         ###   ########.fr       */
+/*   Created: 2020/07/15 20:21:36 by bpouchep          #+#    #+#             */
+/*   Updated: 2020/07/15 20:21:43 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	ft_nbrlen(long n, int base)
-{
-	int	len;
-
-	len = 0;
-	if (!base)
-		base = 10;
-	if (n == 0)
-		return (1);
-	while (n != 0)
-	{
-		len++;
-		n /= base;
-	}
-	return (len);
-}
 
 static char	*ft_fill_str(char *str, int len, int n, int n_bak)
 {

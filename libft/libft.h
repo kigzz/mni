@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/15 20:27:15 by bpouchep          #+#    #+#             */
-/*   Updated: 2020/07/15 20:27:16 by bpouchep         ###   ########.fr       */
+/*   Created: 2020/07/15 20:32:15 by bpouchep          #+#    #+#             */
+/*   Updated: 2020/07/15 20:32:21 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,81 +26,184 @@
 #  define MAX_OPEN 1024
 # endif
 
-typedef struct s_dlst
-{
-	int				data;
-	struct s_dlst	*next;
-	struct s_dlst	*prev;
-}	t_dlst;
-
+/* Implementation of linked list */
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }					t_list;
 
-int					ft_atoi(const char *nptr);
-int					ft_atoi2(const char *nptr, long *nbr);
-int					ft_isalnum(int c);
-int					ft_isalpha(int c);
-int					ft_isascii(int c);
-int					ft_isdigit(char c);
-int					ft_isprint(int c);
-int					ft_isspace(char c);
-void				*ft_memccpy(void *dest, const void *src, int c, size_t n);
-void				*ft_memcpy(void *dest, const void *src, size_t n);
-void				*ft_memset(void *s, int c, size_t n);
-char				**ft_split(const char *s, char c);
-char				*ft_strchr(const char *str, int c);
-char				*ft_strdup(const char *src);
-char				*ft_strcat(char *s1, const char *s2);
-size_t				ft_strlcat(char *dest, const char *src, size_t size);
-size_t				ft_strlcpy(char *dest, const char *src, size_t size);
-char				*ft_strcpy(char *dst, const char *src);
-size_t				ft_strlen(const char *str);
-int					ft_strncmp(const char *s1, const char *s2, size_t n);
-char				*ft_strnstr(const char *str, const char *to_find, size_t n);
-char				*ft_strrchr(const char *str, int c);
-int					ft_tolower(int c);
-int					ft_toupper(int c);
-void				*ft_memmove(void *dst, const void *src, size_t n);
-void				ft_bzero(void *s, size_t n);
-int					ft_memcmp(const void *s1, const void *s2, size_t n);
-void				*ft_memchr(const void *str, int c, size_t n);
-void				*ft_calloc(size_t nmemb, size_t size);
-char				*ft_substr(const char *s, unsigned int start, size_t len);
-char				*ft_strjoin(const char *s1, const char *s2);
-int					ft_putchar_fd(char c, int fd);
-int					ft_putstr_fd(char *s, int fd);
-int					ft_putendl_fd(char *s, int fd);
-void				ft_putnbr_fd(int n, int fd);
-char				*ft_strtrim(const char *s1, const char *set);
-char				*ft_strmapi(const char *s, char (*f)(unsigned int, char));
-char				*ft_itoa(int n);
-t_list				*ft_lstnew(void *content);
-void				ft_lstadd_front(t_list **alst, t_list *new);
-int					ft_lstsize(t_list *lst);
-t_list				*ft_lstlast(t_list *lst);
-void				ft_lstadd_back(t_list **lst, t_list *newnode);
-void				ft_lstdelone(t_list *lst, void (*del)(void*));
-void				ft_lstclear(t_list **lst, void (*del)(void*));
-void				ft_lstiter(t_list *lst, void (*f)(void *));
-t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
-						void (*del)(void *));
-void				ft_dlstadd_back(t_dlst **dlst, t_dlst *new);
-void				ft_dlstadd_front(t_dlst **dlst, t_dlst *new);
-t_dlst				*ft_dlstfirst(t_dlst *dlst);
-t_dlst				*ft_dlstlast(t_dlst *dlst);
-t_dlst				*ft_dlstnew(int data);
-int					ft_dlstsize(t_dlst *dlst);
-char				*ft_get_next_line(int fd);
-int					ft_strchr_char(const char *s, int c);
-int					ft_strchr_set(const char *s, char *set);
-char				**ft_replace_in_matrix(char ***big, char **small, int n);
-int					ft_putmatrix_fd(char **m, int nl, int fd);
-int					ft_matrixlen(char **m);
-void				ft_matrix_free(char ***m);
-char				**ft_matrix_extend(char **in, char *newstr);
-char				**ft_matrix_dup(char **m);
+/* Returns length of a string */
+size_t		ft_strlen(const char *s);
+
+/* Concatenates two strings ensuring it ends with \0 */
+size_t		ft_strlcat(char *dst, const char *src, size_t size);
+
+/* Copies n - 1 bytes from a source string to a destination string */
+size_t		ft_strlcpy(char *dst, const char *src, size_t size);
+
+/* Compares two strings up to the n-th character */
+int			ft_strncmp(const char *s1, const char *s2, size_t n);
+
+/* Reads a String, and, after ignoring spaces
+with ft_isspace, saves the string into an integer */
+int			ft_atoi(const char *nptr);
+
+/* More restrictive version of ft_atoi */
+int			ft_atoi2(const char *nptr, long *nbr);
+
+/* Saves the given number as a string (char array) */
+char		*ft_itoa(int n);
+
+/* Prints a character to the given file descriptor */
+int			ft_putchar_fd(char c, int fd);
+
+/* Prints a string followed by a new line \n to a given file descriptor */
+int			ft_putendl_fd(char *s, int fd);
+
+/* Prints number to the given file descriptor */
+int			ft_putnbr_fd(int n, int fd);
+
+/* Prints number in given base to the given file descriptor */
+int			ft_putnbr_base_fd(long n, char *base, int fd);
+
+/* Prints string to the given file descriptor */
+int			ft_putstr_fd(char *s, int fd);
+
+/* Splits a string according to a given separator character */
+char		**ft_split(const char *s, char c);
+
+/* Concatenates two strings allocating enough space first */
+char		*ft_strjoin(const char *s1, const char *s2);
+
+/* Applies a function (mapping) to every element in a string */
+char		*ft_strmapi(const char *s, char (*f)(unsigned int, char));
+
+/* Removes occurrences of characters in a string from the start
+ * and end of another one */
+char		*ft_strtrim(const char *s1, const char *set);
+
+/* Copies from the n-th char of a string */
+char		*ft_substr(const char *s, unsigned int start, size_t len);
+
+/* Writes n zeroes to the string s */
+void		ft_bzero(void *s, size_t n);
+
+/* Reserves x blocks of y bits of memory */
+void		*ft_calloc(size_t nmemb, size_t size);
+
+/* Returns 1 if the input is a number or a letter in the ASCII table */
+int			ft_isalnum(int c);
+
+/* Returns 1 if the input is a letter in the ASCII table */
+int			ft_isalpha(int c);
+
+/* Returns whether or not a value belongs to the ASCII table */
+int			ft_isascii(int c);
+
+/* Returns 1 if the input is a number in the ASCII table */
+int			ft_isdigit(int c);
+
+/* Returns whether a character is printable */
+int			ft_isprint(int c);
+
+/* Copies from one memory point to another, until the specified character
+ * is copied or until n bytes are copied */
+void		*ft_memccpy(void *dest, const void *src, int c, size_t n);
+
+/* Looks for a matching character inside a part of the memory */
+void		*ft_memchr(const void *s, int c, size_t n);
+
+/* Compares two parts of memory, returning 0 if they're the same,
+ * or a nonzero value */
+int			ft_memcmp(const void *s1, const void *s2, size_t n);
+
+/* Copies from one part of memory to another, ignoring possible overlaps*/
+void		*ft_memcpy(void *dest, const void *src, size_t n);
+
+/* Copies from one part of memory to another, preventing possible overlaps*/
+void		*ft_memmove(void *dest, const void *src, size_t n);
+
+/* Assigns a character n times to a part of the memory*/
+void		*ft_memset(void *s, int c, size_t n);
+
+/* Looks for a specific character inside a given string,
+ * returning pointer to it*/
+char		*ft_strchr(const char *s, int c);
+
+/* Looks for a specific character inside a given string,
+ * returning its index */
+int			ft_strchr_char(const char *s, int c);
+
+/* Looks for a specific set of chars inside a given string,
+ * returning its index */
+int			ft_strchr_set(const char *s, char *set);
+
+/* Looks for a given character in a string, reading it from back to front */
+char		*ft_strrchr(const char *s, int c);
+
+/* Saves enoug space and duplicates a string */
+char		*ft_strdup(const char *s);
+
+/* Tries to find a substring (needle) in a second string (haystack)
+ * before the n-th char is reached */
+char		*ft_strnstr(const char *big, const char *little, size_t len);
+
+/* Makes every uppercase character in a string lowercase */
+int			ft_tolower(int c);
+
+/* Makes every lowercase character in a string uppercase */
+int			ft_toupper(int c);
+
+/* Retrieves length of a number in a given base */
+int			ft_nbrlen(long n, int base);
+
+/* Returns if a character is a form of space (space, tab, etc) */
+int			ft_isspace(char c);
+
+/* Adds new node at the end of the linked list */
+void		ft_lstadd_back(t_list **lst, t_list *newnode);
+
+/* Adds new node at the beginning of the linked list */
+void		ft_lstadd_front(t_list **lst, t_list *newnode);
+
+/* Deletes a given element and every element after that */
+void		ft_lstclear(t_list **lst, void (*del)(void*));
+
+/* Deletes, frees, and applies function del to content of a given node */
+void		ft_lstdelone(t_list *lst, void (*del)(void*));
+
+/* Applies a function to the content of every node of the linked list */
+void		ft_lstiter(t_list *lst, void (*f)(void *));
+
+/* Retrieves last node of the list */
+t_list		*ft_lstlast(t_list *lst);
+
+/* Applies function to a copy of the list, freeing when necessary */
+t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+/* Creates new node allocating with malloc */
+t_list		*ft_lstnew(void *content);
+
+/* Returns number of elements of linked list */
+int			ft_lstsize(t_list *lst);
+
+/* Frees all allocated memory from a matrix (array of arrays) */
+void		ft_matrix_free(char ***m);
+
+/* Allocates and fully duplicates a matrix (array of arrays) */
+char		**ft_matrix_dup(char **m);
+
+/* Writes char ** to given fd (prints \n per line in char ** if nl != 0) */
+int			ft_putmatrix_fd(char **m, int nl, int fd);
+
+/* Returns length of a matrix (char **) */
+int			ft_matrixlen(char **m);
+
+/* Appends new row to a matrix */
+char		**ft_matrix_extend(char **in, char *newstr);
+
+/* Replaces n-th line with another matrix */
+char		**ft_replace_in_matrix(char ***big, char **small, int n);
 
 #endif

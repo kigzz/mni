@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/19 13:46:58 by bpouchep          #+#    #+#             */
-/*   Updated: 2022/04/19 13:47:00 by bpouchep         ###   ########.fr       */
+/*   Created: 2022/04/19 13:46:17 by bpouchep          #+#    #+#             */
+/*   Updated: 2022/04/19 13:46:22 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,4 @@ int	ft_strchr_set(const char *s, char *set)
 		i++;
 	}
 	return (-1);
-}
+}	

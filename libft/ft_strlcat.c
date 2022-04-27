@@ -5,32 +5,30 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/15 20:25:26 by bpouchep          #+#    #+#             */
-/*   Updated: 2020/07/15 20:25:27 by bpouchep         ###   ########.fr       */
+/*   Created: 2020/07/15 20:25:47 by bpouchep          #+#    #+#             */
+/*   Updated: 2020/07/15 20:25:50 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dest, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
+	char			*ptr;
 	unsigned int	i;
-	unsigned int	dest_size;
-	unsigned int	src_size;
 
-	i = 0;
-	dest_size = ft_strlen(dest);
-	src_size = ft_strlen(src);
-	if (size <= dest_size || size == 0)
-		src_size = src_size + size;
-	else
-		src_size = src_size + dest_size;
-	while (src[i] != '\0' && dest_size + 1 < size)
+	if (size < ft_strlen(dst))
+		return (ft_strlen(src) + size);
+	ptr = dst + ft_strlen(dst);
+	i = ft_strlen(dst);
+	while (i < size - 1 && *src != '\0' && size >= 2)
 	{
-		dest[dest_size] = src[i];
-		dest_size++;
+		*ptr = *src;
+		ptr++;
+		src++;
 		i++;
 	}
-	dest[dest_size] = '\0';
-	return (src_size);
+	if (size != 0)
+		*ptr = '\0';
+	return (ft_strlen(dst) + ft_strlen(src));
 }

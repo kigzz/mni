@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/25 05:37:39 by bpouchep          #+#    #+#             */
-/*   Updated: 2022/01/25 05:37:47 by bpouchep         ###   ########.fr       */
+/*   Created: 2020/07/15 20:25:54 by bpouchep          #+#    #+#             */
+/*   Updated: 2020/07/15 20:25:57 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dest, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	unsigned int	i;
 	size_t			size_src;
@@ -28,13 +28,13 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 		while (i < size - 1)
 		{
 			if (i < size_src)
-				dest[i] = src[i];
+				dst[i] = src[i];
 			else if (i == size_src)
-				dest[i] = '\0';
+				dst[i] = '\0';
 			i++;
 		}
 	}
 	if (size != 0)
-		dest[i] = '\0';
+		dst[i] = '\0';
 	return (size_src);
 }

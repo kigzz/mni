@@ -12,6 +12,30 @@
 
 #include "../includes/minishell.h"
 
+//static char	**split_all(char **args, t_prompt *prompt)
+//{
+//	char	**subsplit;
+//	int		i;
+//	int		quotes[2];
+//
+//	i = -1;
+////	for (int i = 0; i < ft_matrixlen(args); i++)
+////		printf("split all | args = %s\n", args[i]);
+//	while (args && args[++i])
+//	{
+//		args[i] = expand_vars(args[i], -1, quotes, prompt);
+////		printf("expand vars | args = %s\n", args[i]);
+//		args[i] = expand_path(args[i], -1, quotes, mini_getenv("HOME", prompt->envp, 4));
+////		printf("expand path | args = %s\n", args[i]);
+//		subsplit = ft_cmd_split(args[i], "<|>");
+//		ft_replace_in_matrix(&args, subsplit, i);
+//		i += ft_matrixlen(subsplit) - 1;
+//		ft_matrix_free(&subsplit);
+//	}
+////	for (int i = 0; i < ft_matrixlen(args); i++)
+////		printf("split all | args = %s\n", args[i]);
+//	return (args);
+//}
 static char	**split_all(char **args, t_prompt *prompt)
 {
 	char	**subsplit;
@@ -19,21 +43,16 @@ static char	**split_all(char **args, t_prompt *prompt)
 	int		quotes[2];
 
 	i = -1;
-//	for (int i = 0; i < ft_matrixlen(args); i++)
-//		printf("split all | args = %s\n", args[i]);
 	while (args && args[++i])
 	{
 		args[i] = expand_vars(args[i], -1, quotes, prompt);
-//		printf("expand vars | args = %s\n", args[i]);
-//		args[i] = expand_path(args[i], -1, quotes, mini_getenv("HOME", prompt->envp, 4));
-//		printf("expand path | args = %s\n", args[i]);
+		args[i] = expand_path(args[i], -1, quotes, \
+			mini_getenv("HOME", prompt->envp, 4));
 		subsplit = ft_cmd_split(args[i], "<|>");
 		ft_replace_in_matrix(&args, subsplit, i);
 		i += ft_matrixlen(subsplit) - 1;
 		ft_matrix_free(&subsplit);
 	}
-//	for (int i = 0; i < ft_matrixlen(args); i++)
-//		printf("split all | args = %s\n", args[i]);
 	return (args);
 }
 

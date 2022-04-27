@@ -5,37 +5,31 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/15 20:22:52 by bpouchep          #+#    #+#             */
-/*   Updated: 2020/07/15 20:22:54 by bpouchep         ###   ########.fr       */
+/*   Created: 2020/07/15 20:24:12 by bpouchep          #+#    #+#             */
+/*   Updated: 2020/07/15 20:24:16 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char		*dest2;
-	const unsigned char	*src2;
+	unsigned char	*d;
+	unsigned char	*s;
+	size_t			i;
 
-	dest2 = (unsigned char *)dst;
-	src2 = (unsigned char *)src;
-	if (dst == NULL && src == NULL)
+	d = (unsigned char *)dest;
+	s = (unsigned char *)src;
+	if (src == NULL && dest == NULL)
 		return (NULL);
-	if (src2 < dest2)
+	i = 0;
+	while (s && i < n)
 	{
-		while (n > 0)
-		{
-			dest2[n - 1] = src2[n - 1];
-			n--;
-		}
+		if (src < dest)
+			d[n - i - 1] = s[n - i - 1];
+		else
+			d[i] = s[i];
+		i++;
 	}
-	else
-	{
-		while (n > 0)
-		{
-			*dest2++ = *src2++;
-			n--;
-		}
-	}
-	return ((void *)dst);
+	return (dest);
 }

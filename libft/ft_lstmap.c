@@ -1,41 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/22 17:23:54 by bpouchep          #+#    #+#             */
-/*   Updated: 2020/07/22 17:24:06 by bpouchep         ###   ########.fr       */
+/*   Created: 2020/07/15 20:23:03 by bpouchep          #+#    #+#             */
+/*   Updated: 2020/07/15 20:23:09 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+t_list	*ft_lsapply(t_list *l, t_list *s, void *(*f)(void *), void (*d)(void *))
+{
+	if (l)
+	{
+		s = ft_lstnew(f(l->content));
+		if (!s)
+		{
+			ft_lstclear(&s, d);
+			return (NULL);
+		}
+		s->next = ft_lsapply(l->next, s->next, f, d);
+	}
+	return (s);
+}
+
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*lst_tmp;
-	t_list	*new;
-	t_list	*head;
-	void	*new_content;
+	t_list	*start;
 
-	new = NULL;
-	head = NULL;
-	lst_tmp = lst;
-	while (lst_tmp != NULL)
-	{
-		new_content = f(lst_tmp->content);
-		if (new_content != NULL)
-		{
-			new = ft_lstnew(new_content);
-			if (new == NULL)
-			{
-				ft_lstclear(&lst_tmp, del);
-				return (NULL);
-			}
-			ft_lstadd_back(&head, new);
-		}
-		lst_tmp = lst_tmp->next;
-	}
-	return (head);
+	start = NULL;
+	start = ft_lsapply(lst, start, f, del);
+	return (start);
 }

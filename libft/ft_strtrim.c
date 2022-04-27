@@ -6,7 +6,7 @@
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/15 20:26:44 by bpouchep          #+#    #+#             */
-/*   Updated: 2020/07/15 20:26:45 by bpouchep         ###   ########.fr       */
+/*   Updated: 2020/07/15 20:26:50 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,21 @@
 
 char	*ft_strtrim(const char *s1, const char *set)
 {
-	size_t	i;
-	size_t	j;
+	int	len;
+	int	i;
+	int	j;
 
+	if (!s1)
+		return (0);
+	len = ft_strlen(s1);
 	i = 0;
-	j = ft_strlen(s1) - 1;
-	while (s1[i] && ft_strchr(set, s1[i]))
+	j = len - 1;
+	while (i <= len / 2 && ft_strchr(set, s1[i]) != NULL)
 		i++;
-	while (s1[j] && i < j && ft_strchr(set, s1[j]))
+	while (j >= len / 2 && ft_strchr(set, s1[j]) != NULL)
 		j--;
-	if (i >= j)
+	if (i > j)
 		return (ft_strdup(""));
-	else
-		return (ft_substr(&s1[i], 0, j + 1 - i));
+	len = j - i;
+	return (ft_substr(s1, i, len + 1));
 }

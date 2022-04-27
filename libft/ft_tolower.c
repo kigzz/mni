@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/15 20:26:59 by bpouchep          #+#    #+#             */
-/*   Updated: 2020/07/15 20:27:00 by bpouchep         ###   ########.fr       */
+/*   Created: 2020/07/15 20:27:09 by bpouchep          #+#    #+#             */
+/*   Updated: 2020/07/15 20:27:14 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 int	ft_tolower(int c)
 {
-	if (c >= 'A' && c <= 'Z')
-		c = c + ('a' - 'A');
-	return (c);
+	if (c >= 65 && c <= 90)
+		return (c + 32);
+	else
+		return (c);
 }

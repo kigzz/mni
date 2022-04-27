@@ -92,7 +92,7 @@ static char	**ft_fill_array(char **aux, char const *s, char *set, int i[3])
 char	**ft_cmd_trim(char const *s, char *set)
 {
 	char	**aux;
-	int		words;
+	int		nwords;
 	int		i[3];
 	int		counts[2];
 
@@ -103,13 +103,13 @@ char	**ft_cmd_trim(char const *s, char *set)
 	counts[1] = 0;
 	if (!s)
 		return (NULL);
-	words = ft_count_words(s, set, counts);
-	if (words == -1)
+	nwords = ft_count_words(s, set, counts);
+	if (nwords == -1)
 		return (NULL);
-	aux = malloc((words + 1) * sizeof(char *));
+	aux = malloc((nwords + 1) * sizeof(char *));
 	if (aux == NULL)
 		return (NULL);
 	aux = ft_fill_array(aux, s, set, i);
-	aux[words] = NULL;
+	aux[nwords] = NULL;
 	return (aux);
 }

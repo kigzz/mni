@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/15 20:20:36 by bpouchep          #+#    #+#             */
-/*   Updated: 2020/07/15 20:20:47 by bpouchep         ###   ########.fr       */
+/*   Created: 2020/07/15 20:20:03 by bpouchep          #+#    #+#             */
+/*   Updated: 2020/07/15 20:20:07 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	ft_memset(s, '\0', n);
+	ft_memset(s, 0, n);
 }

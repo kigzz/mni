@@ -5,21 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/15 20:25:45 by bpouchep          #+#    #+#             */
-/*   Updated: 2020/07/15 20:25:47 by bpouchep         ###   ########.fr       */
+/*   Created: 2020/07/15 20:26:01 by bpouchep          #+#    #+#             */
+/*   Updated: 2020/07/15 20:26:04 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+size_t	ft_strlen(const char *s)
 {
-	size_t	i;
+	int	count;
 
-	if (!str)
-		return (0);
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
+	count = 0;
+	if (!s)
+		return (count);
+	while (*s != '\0')
+	{
+		count++;
+		s++;
+	}
+	return (count);
 }

@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/15 15:31:04 by bpouchep          #+#    #+#             */
-/*   Updated: 2022/01/15 15:31:05 by bpouchep         ###   ########.fr       */
+/*   Created: 2020/07/15 20:20:55 by bpouchep          #+#    #+#             */
+/*   Updated: 2020/07/15 20:21:03 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(char c)
+int	ft_isdigit(int c)
 {
-	return (c >= '0' && c <= '9');
+	return (c >= 48 && c <= 57);
 }

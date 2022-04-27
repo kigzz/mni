@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/17 13:30:21 by bpouchep          #+#    #+#             */
-/*   Updated: 2020/07/17 13:30:31 by bpouchep         ###   ########.fr       */
+/*   Created: 2020/07/15 20:23:31 by bpouchep          #+#    #+#             */
+/*   Updated: 2020/07/15 20:23:38 by bpouchep         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int	count;
+	int	size;
 
-	count = 0;
-	while (lst != NULL)
+	size = 0;
+	while (lst)
 	{
 		lst = lst->next;
-		count++;
+		size++;
 	}
-	return (count);
+	return (size);
 }
