@@ -70,7 +70,7 @@ int	main(int argc, char **argv, char **envp)
 		signal(SIGINT, handle_signal);
 		signal(SIGPIPE, SIG_IGN);
 		signal(SIGQUIT, SIG_IGN);
-		output = readline("minishell $ ");
+		output = readline("minishell $> ");
 		if (!check_args(output, &prompt))
 			break ;
 	}
