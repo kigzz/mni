@@ -42,20 +42,27 @@ static void	*parse_args(char **args, t_prompt *p)
 	int	is_exit;
 	int	i;
 
+	printf("bool error | %d\n", p->error);
 	is_exit = 0;
 	p->cmds = fill_nodes(split_all(args, p), -1);
 	if (!p->cmds)
 		return (p);
 	i = ft_lstsize(p->cmds);
+	printf("i = %d\n", i);
 	g_status = builtin(p, p->cmds, &is_exit, 0);
 	while (i-- > 0)
 		waitpid(-1, &g_status, 0);
 	if (!is_exit && g_status == 13)
 		g_status = 0;
-	if (!is_exit && g_status == 2)
+	if (!is_exit && g_status == 2 && ft_lstsize(p->cmds) == 1)
 		g_status = 130;
-	if (p->error == 1)
+	if (p->error == 0 && g_status == 2)
+		g_status = 0;
+	if (p->error == 1 && (g_status == 0 || g_status == 2))
+	{
 		g_status = 127;
+		p->error = 0;
+	}
 	if (g_status > 255)
 		g_status = g_status / 255;
 	if (args && is_exit)
