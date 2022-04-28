@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "../includes/minishell.h"
-
+																				// SIGNAL SPECIAL HEREDOC ?
 char	*get_here_str(char *str[2], size_t len, char *limit, char *warn)
 {
 	char	*temp;

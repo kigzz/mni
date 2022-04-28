@@ -42,13 +42,11 @@ static void	*parse_args(char **args, t_prompt *p)
 	int	is_exit;
 	int	i;
 
-	printf("bool error | %d\n", p->error);
 	is_exit = 0;
 	p->cmds = fill_nodes(split_all(args, p), -1);
 	if (!p->cmds)
 		return (p);
 	i = ft_lstsize(p->cmds);
-	printf("i = %d\n", i);
 	g_status = builtin(p, p->cmds, &is_exit, 0);
 	while (i-- > 0)
 		waitpid(-1, &g_status, 0);

@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "../includes/minishell.h"
-
+																// CHECK IF REDIRECTION VERS UN DOSSIER
 int	get_fd(int oldfd, char *path, int flags[2])
 {
 	int	fd;
@@ -20,7 +20,7 @@ int	get_fd(int oldfd, char *path, int flags[2])
 		close(oldfd);
 	if (!path)
 		return (-1);
-	if (access(path, F_OK) == -1 && !flags[0])
+	if (access(path, F_OK) == -1 && !flags[0])				// ??? ++ IS_DIR CHECK
 		mini_perror(NDIR, path, 127);
 	else if (!flags[0] && access(path, R_OK) == -1)
 		mini_perror(NPERM, path, 126);

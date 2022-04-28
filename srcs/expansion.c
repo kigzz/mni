@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "../includes/minishell.h"
-
+												// NE PAS EXPAND IF HEREDOC
 char	*expand_path(char *str, int i, int quotes[2], char *var)
 {
 	char	*path;
