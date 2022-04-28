@@ -24,7 +24,7 @@ void	handle_signal(int sig)
 	}
 }
 
-void handle_sigint_exec(int sig)
+void	handle_sigint_exec(int sig)
 {
 	if (sig == SIGINT)
 	{
