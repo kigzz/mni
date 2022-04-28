@@ -60,7 +60,10 @@ static char	*get_substr_var(char *str, int i, t_prompt *prompt)
 		var = ft_itoa(g_status);
 	path = ft_strjoin(aux, var);
 	free(aux);
-	aux = ft_strjoin(path, &str[i + pos]);
+	if ((i + pos) <= (int)(ft_strlen(str)))
+		aux = ft_strjoin(path, &str[i + pos]);
+	else
+		aux = ft_strjoin(path, "\0");
 	free(var);
 	free(path);
 	free(str);
