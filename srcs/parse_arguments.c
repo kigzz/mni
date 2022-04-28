@@ -48,13 +48,12 @@ static void	*parse_args(char **args, t_prompt *p)
 		return (p);
 	i = ft_lstsize(p->cmds);
 	g_status = builtin(p, p->cmds, &is_exit, 0);
-	// wait for child
-	// if ok = retrieve g_status
-	// if not ok = not retrieve
 	while (i-- > 0)
 		waitpid(-1, &g_status, 0);
 	if (!is_exit && g_status == 13)
 		g_status = 0;
+	if (!is_exit && g_status == 2)
+		g_status = 130;
 	if (g_status > 255)
 		g_status = g_status / 255;
 	if (args && is_exit)
