@@ -28,6 +28,7 @@ void	handle_sigint_exec(int sig)
 {
 	if (sig == SIGINT)
 	{
+		g_status = 130;
 		ft_putstr_fd("\n", 1);
 		rl_replace_line("", 0);
 		rl_on_new_line();
@@ -36,6 +37,17 @@ void	handle_sigint_exec(int sig)
 	{
 		g_status = 131;
 		ft_putstr_fd("Quit (core dumped)\n", 1);
+	}
+}
+
+void 	handle_signal_heredoc(int sig)
+{
+	if (sig == SIGINT)
+	{
+		g_status = 130;
+		ioctl(STDIN_FILENO, TIOCSTI, "\n");
+		rl_replace_line("", 0);
+		rl_on_new_line();
 	}
 }
 

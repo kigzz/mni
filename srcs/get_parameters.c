@@ -46,8 +46,11 @@ t_mini	*get_outfile1(t_mini *node, char **args, int *i)
 	flags[1] = 0;
 	nl = "minishell: syntax error near unexpected token `newline'";
 	(*i)++;
+	for (int j = 0; j < ft_matrixlen(args); j++)
+		printf("args = %s\n", args[j]);
 	if (args[*i])
 		node->outfile = get_fd(node->outfile, args[*i], flags);
+	printf("node outfile > | %d\n", node->outfile);
 	if (!args[*i] || node->outfile == -1)
 	{
 		*i = -1;
