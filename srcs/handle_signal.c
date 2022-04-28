@@ -32,11 +32,16 @@ void handle_sigint_exec(int sig)
 		rl_replace_line("", 0);
 		rl_on_new_line();
 	}
+	else if (sig == SIGQUIT)
+	{
+		g_status = 131;
+		ft_putstr_fd("Quit (core dumped)\n", 1);
+	}
 }
 
 void	sig_and_exec(t_prompt *prompt, t_list *cmd)
 {
 	signal(SIGINT, handle_sigint_exec);
-	signal(SIGQUIT, SIG_IGN);
+	signal(SIGQUIT, handle_sigint_exec);
 	exec_cmd(prompt, cmd);
 }
