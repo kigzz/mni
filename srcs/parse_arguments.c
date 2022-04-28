@@ -54,6 +54,8 @@ static void	*parse_args(char **args, t_prompt *p)
 		g_status = 0;
 	if (!is_exit && g_status == 2)
 		g_status = 130;
+	if (p->error == 1)
+		g_status = 127;
 	if (g_status > 255)
 		g_status = g_status / 255;
 	if (args && is_exit)

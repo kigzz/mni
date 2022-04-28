@@ -50,6 +50,7 @@ static t_prompt	init_prompt(char **argv, char **envp)
 	prompt.cmds = NULL;
 	prompt.envp = ft_matrix_dup(envp);
 	g_status = 0;
+	prompt.error = 0;
 	prompt = init_vars(prompt, str, argv);
 	return (prompt);
 }
