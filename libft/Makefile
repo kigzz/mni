@@ -21,6 +21,7 @@ SRCS		=	ft_atoi.c ft_bzero.c			\
                	ft_isalpha.c ft_isascii.c		\
                	ft_isdigit.c ft_isprint.c		\
                	ft_memmove.c ft_memset.c		\
+               	ft_strcat.c ft_strcpy.c			\
                	ft_split.c ft_strchr.c			\
                	ft_strdup.c ft_strjoin.c		\
                	ft_strlcat.c ft_strlcpy.c		\
