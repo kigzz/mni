@@ -17,10 +17,11 @@ void	handle_signal(int sig)
 	if (sig == SIGINT)
 	{
 		g_status = 130;
-		ft_putstr_fd("\n", 1);
+		ioctl(STDIN_FILENO, TIOCSTI, "\n");
+//		ft_putstr_fd("\n", 1);
 		rl_replace_line("", 0);
 		rl_on_new_line();
-		rl_redisplay();
+//		rl_redisplay();
 	}
 }
 
