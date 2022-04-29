@@ -1,1 +1,17 @@
 # ninja log v5
+6	190	1651255491704782860	CMakeFiles/minishell2.dir/srcs/handle_signal.c.o	ae13f67692cb45fe
+0	204	1651255491708782889	CMakeFiles/minishell2.dir/srcs/main.c.o	395fc596a9a721a3
+8	223	1651255491736783097	CMakeFiles/minishell2.dir/srcs/builtins.c.o	40bff478a08596c5
+9	254	1651255491768783335	CMakeFiles/minishell2.dir/srcs/env.c.o	d30796c7ee41c8c6
+14	285	1651255491800783572	CMakeFiles/minishell2.dir/srcs/execution.c.o	f3c25a46613014ed
+11	300	1651255491812783661	CMakeFiles/minishell2.dir/srcs/error.c.o	8a22f0352cee6597
+190	342	1651255491856783988	CMakeFiles/minishell2.dir/srcs/expansion.c.o	c35bf3ff618e61b5
+204	468	1651255491980784908	CMakeFiles/minishell2.dir/srcs/fill_nodes.c.o	2e9aa81290102bb0
+254	490	1651255492004785086	CMakeFiles/minishell2.dir/srcs/ft_cmd_split.c.o	ad6edd038c56d26c
+223	504	1651255492016785176	CMakeFiles/minishell2.dir/srcs/get_cmd.c.o	709535077346c6c4
+300	514	1651255492020785206	CMakeFiles/minishell2.dir/srcs/ft_strtrim_all.c.o	2a87771548afb06c
+285	525	1651255492040785355	CMakeFiles/minishell2.dir/srcs/ft_cmd_trim.c.o	eb6d5bf7c9694b4d
+342	546	1651255492060785506	CMakeFiles/minishell2.dir/srcs/parse_arguments.c.o	799c9e8f76f0c00
+468	636	1651255492148786166	CMakeFiles/minishell2.dir/srcs/get_parameters.c.o	7c73fcfd5fa8cc9b
+490	664	1651255492176786376	CMakeFiles/minishell2.dir/srcs/heredoc.c.o	c5153c41a706f564
+504	707	1651255492220786706	CMakeFiles/minishell2.dir/srcs/builtins_utils.c.o	bb06ea0a6ad9d7d7

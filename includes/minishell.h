@@ -36,6 +36,7 @@ typedef struct s_prompt
 	t_list	*cmds;
 	char	**envp;
 	int		error;
+	int		is_heredoc;
 }			t_prompt;
 
 typedef struct s_mini
@@ -91,7 +92,6 @@ void	child_builtin(t_prompt *prompt, t_mini *n, int l, t_list *cmd);
 void	get_cmd(t_prompt *prompt, t_list *start, char **split_path, char *path);
 void	err_cmd(t_prompt *prompt, const t_mini *n);
 char	*expand_vars(char *str, int i, int quotes[2], t_prompt *prompt);
-char	*expand_path(char *str, int i, int quotes[2], char *var);
 int		get_here_doc(char *str[2], char *aux[2]);
 void	*mini_perror(int err_type, char *param, int err);
 char	*mini_getenv(char	*var, char **envp, int n);
