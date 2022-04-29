@@ -24,6 +24,7 @@
 # include <sys/wait.h>
 # include <dirent.h>
 # include <sys/ioctl.h>
+# include <errno.h>
 
 # define READ_END 0
 # define WRITE_END 1
@@ -79,6 +80,7 @@ char	**ft_cmd_split(char const *s, char *set);
 char	*ft_strtrim_all(char const *s1, int squote, int dquote);
 t_list	*fill_nodes(char **args, int i);
 int		get_fd(int oldfd, char *path, int flags[2]);
+void	get_fd_error(char *path, const int *flags);
 t_mini	*get_outfile1(t_mini *node, char **args, int *i);
 t_mini	*get_outfile2(t_mini *node, char **args, int *i);
 t_mini	*get_infile1(t_mini *node, char **args, int *i);
@@ -87,6 +89,7 @@ void	*exec_cmd(t_prompt *prompt, t_list *cmd);
 void	*check_to_fork(t_prompt *prompt, t_list *cmd, int fd[2]);
 void	child_builtin(t_prompt *prompt, t_mini *n, int l, t_list *cmd);
 void	get_cmd(t_prompt *prompt, t_list *start, char **split_path, char *path);
+void	err_cmd(t_prompt *prompt, const t_mini *n);
 char	*expand_vars(char *str, int i, int quotes[2], t_prompt *prompt);
 char	*expand_path(char *str, int i, int quotes[2], char *var);
 int		get_here_doc(char *str[2], char *aux[2]);
@@ -96,7 +99,7 @@ char	**mini_setenv(char *var, char *value, char **envp, int n);
 void	free_content(void *content);
 void	handle_signal(int sig);
 void	handle_sigint_exec(int sig);
-void 	handle_signal_heredoc(int sig);
+void	handle_signal_heredoc(int sig);
 void	sig_and_exec(t_prompt *prompt, t_list *cmd);
 
 #endif

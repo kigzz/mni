@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "../includes/minishell.h"
-																// CHECK IF REDIRECTION VERS UN DOSSIER
+
 int	get_fd(int oldfd, char *path, int flags[2])
 {
 	int	fd;
@@ -20,16 +20,19 @@ int	get_fd(int oldfd, char *path, int flags[2])
 		close(oldfd);
 	if (!path)
 		return (-1);
-	if (access(path, F_OK) == -1 && !flags[0])				// ??? ++ IS_DIR CHECK
-		mini_perror(NDIR, path, 127);
-	else if (!flags[0] && access(path, R_OK) == -1)
-		mini_perror(NPERM, path, 126);
-	else if (flags[0] && access(path, W_OK) == -1 && access(path, F_OK) == 0)
-		mini_perror(NPERM, path, 126);
+	get_fd_error(path, flags);
 	if (flags[0] && flags[1])
+	{
 		fd = open(path, O_CREAT | O_WRONLY | O_APPEND, 0666);
+		if (fd == -1)
+			printf("minishell: %s: %s\n", path, strerror(errno));
+	}
 	else if (flags[0] && !flags[1])
+	{
 		fd = open(path, O_CREAT | O_WRONLY | O_TRUNC, 0666);
+		if (fd == -1)
+			printf("minishell: %s: %s\n", path, strerror(errno));
+	}
 	else if (!flags[0] && oldfd != -1)
 		fd = open(path, O_RDONLY);
 	else
@@ -46,11 +49,8 @@ t_mini	*get_outfile1(t_mini *node, char **args, int *i)
 	flags[1] = 0;
 	nl = "minishell: syntax error near unexpected token `newline'";
 	(*i)++;
-	for (int j = 0; j < ft_matrixlen(args); j++)
-		printf("args = %s\n", args[j]);
 	if (args[*i])
 		node->outfile = get_fd(node->outfile, args[*i], flags);
-	printf("node outfile > | %d\n", node->outfile);
 	if (!args[*i] || node->outfile == -1)
 	{
 		*i = -1;
@@ -60,7 +60,9 @@ t_mini	*get_outfile1(t_mini *node, char **args, int *i)
 			g_status = 2;
 		}
 		else
+		{
 			g_status = 1;
+		}
 	}
 	return (node);
 }

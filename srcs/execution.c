@@ -95,7 +95,6 @@ void	*check_to_fork(t_prompt *prompt, t_list *cmd, int fd[2])
 	t_mini	*n;
 	DIR		*dir;
 
-
 	n = cmd->content;
 	dir = NULL;
 	if (n->full_cmd)

@@ -126,9 +126,9 @@ void	free_content(void *content)
 	node = content;
 	ft_matrix_free(&node->full_cmd);
 	free(node->full_path);
-	if (node->infile != STDIN_FILENO)
+	if (node->infile != STDIN_FILENO && node->infile != -1)
 		close(node->infile);
-	if (node->outfile != STDOUT_FILENO)
+	if (node->outfile != STDOUT_FILENO && node->outfile != -1)
 		close(node->outfile);
 	free(node);
 }
