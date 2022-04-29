@@ -53,6 +53,9 @@ int	get_here_doc(char *str[2], char *aux[2])
 	free(str[1]);
 	close(fd[WRITE_END]);
 	if (g_status == 130)
+	{
 		close(fd[READ_END]);
+		return (-1);
+	}
 	return (fd[READ_END]);
 }
