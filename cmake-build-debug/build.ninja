@@ -168,6 +168,12 @@ build CMakeFiles/minishell2.dir/srcs/builtins_utils.c.o: C_COMPILER__minishell2_
   OBJECT_DIR = CMakeFiles/minishell2.dir
   OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/srcs
 
+build CMakeFiles/minishell2.dir/srcs/error2.c.o: C_COMPILER__minishell2_Debug /home/bpouchep/CLionProjects/minishell3/srcs/error2.c || cmake_object_order_depends_target_minishell2
+  DEP_FILE = CMakeFiles/minishell2.dir/srcs/error2.c.o.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles/minishell2.dir
+  OBJECT_FILE_DIR = CMakeFiles/minishell2.dir/srcs
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target minishell2
@@ -176,7 +182,7 @@ build CMakeFiles/minishell2.dir/srcs/builtins_utils.c.o: C_COMPILER__minishell2_
 #############################################
 # Link the executable minishell2
 
-build minishell2: C_EXECUTABLE_LINKER__minishell2_Debug CMakeFiles/minishell2.dir/srcs/main.c.o CMakeFiles/minishell2.dir/srcs/handle_signal.c.o CMakeFiles/minishell2.dir/srcs/builtins.c.o CMakeFiles/minishell2.dir/srcs/env.c.o CMakeFiles/minishell2.dir/srcs/error.c.o CMakeFiles/minishell2.dir/srcs/execution.c.o CMakeFiles/minishell2.dir/srcs/expansion.c.o CMakeFiles/minishell2.dir/srcs/fill_nodes.c.o CMakeFiles/minishell2.dir/srcs/get_cmd.c.o CMakeFiles/minishell2.dir/srcs/ft_cmd_split.c.o CMakeFiles/minishell2.dir/srcs/ft_cmd_trim.c.o CMakeFiles/minishell2.dir/srcs/ft_strtrim_all.c.o CMakeFiles/minishell2.dir/srcs/parse_arguments.c.o CMakeFiles/minishell2.dir/srcs/get_parameters.c.o CMakeFiles/minishell2.dir/srcs/heredoc.c.o CMakeFiles/minishell2.dir/srcs/builtins_utils.c.o
+build minishell2: C_EXECUTABLE_LINKER__minishell2_Debug CMakeFiles/minishell2.dir/srcs/main.c.o CMakeFiles/minishell2.dir/srcs/handle_signal.c.o CMakeFiles/minishell2.dir/srcs/builtins.c.o CMakeFiles/minishell2.dir/srcs/env.c.o CMakeFiles/minishell2.dir/srcs/error.c.o CMakeFiles/minishell2.dir/srcs/execution.c.o CMakeFiles/minishell2.dir/srcs/expansion.c.o CMakeFiles/minishell2.dir/srcs/fill_nodes.c.o CMakeFiles/minishell2.dir/srcs/get_cmd.c.o CMakeFiles/minishell2.dir/srcs/ft_cmd_split.c.o CMakeFiles/minishell2.dir/srcs/ft_cmd_trim.c.o CMakeFiles/minishell2.dir/srcs/ft_strtrim_all.c.o CMakeFiles/minishell2.dir/srcs/parse_arguments.c.o CMakeFiles/minishell2.dir/srcs/get_parameters.c.o CMakeFiles/minishell2.dir/srcs/heredoc.c.o CMakeFiles/minishell2.dir/srcs/builtins_utils.c.o CMakeFiles/minishell2.dir/srcs/error2.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/minishell2.dir
   POST_BUILD = :

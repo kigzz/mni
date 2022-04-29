@@ -67,7 +67,8 @@
 				13,
 				14,
 				15,
-				17
+				17,
+				18
 			]
 		}
 	],
@@ -115,7 +116,8 @@
 				13,
 				14,
 				15,
-				17
+				17,
+				18
 			]
 		},
 		{
@@ -233,6 +235,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "srcs/builtins_utils.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "srcs/error2.c",
 			"sourceGroupIndex" : 0
 		}
 	],

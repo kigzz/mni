@@ -62,6 +62,8 @@ static DIR	*cmd_checks(t_prompt *prompt, t_list *cmd, char ***s, char *path)
 		*s = ft_split(path, ':');
 		free(path);
 		n->full_path = find_command(*s, *n->full_cmd, n->full_path);
+		if (!n->full_path && !ft_strncmp("minishell", *n->full_cmd, 9))
+			n->full_path = ft_strjoin("./", *n->full_cmd);
 		err_cmd(prompt, n);
 	}
 	return (dir);

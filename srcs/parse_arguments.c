@@ -21,15 +21,14 @@ static char	**split_all(char **args, t_prompt *prompt)
 	i = -1;
 	while (args && args[++i])
 	{
-		if (args[i][0] == '<' && args[i][1] == '<')
-			prompt->is_heredoc = 1;
-		args[i] = expand_vars(args[i], -1, quotes, prompt);
+		if ((args[i][0] == '$' || args[i][0] == '\'' || args[i][0] == '\"')
+		&& (args[i - 1][0] != '<' && args[i - 1][1] != '<'))
+			args[i] = expand_vars(args[i], -1, quotes, prompt);
 		subsplit = ft_cmd_split(args[i], "<|>");
 		ft_replace_in_matrix(&args, subsplit, i);
 		i += ft_matrixlen(subsplit) - 1;
 		ft_matrix_free(&subsplit);
 	}
-	prompt->is_heredoc = 0;
 	return (args);
 }
 

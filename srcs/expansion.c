@@ -43,8 +43,6 @@ char	*expand_vars(char *str, int i, int quotes[2], t_prompt *prompt)
 {
 	quotes[0] = 0;
 	quotes[1] = 0;
-	if (prompt->is_heredoc == 1)
-		return (str);
 	while (str && str[++i])
 	{
 		quotes[0] = (quotes[0] + (!quotes[1] && str[i] == '\'')) % 2;
