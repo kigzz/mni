@@ -57,7 +57,7 @@ void	*mini_perror(int err_type, char *param, int err)
 	else if (err_type == PIPERR)
 		ft_putstr_fd("minishell: error creating pipe\n", 2);
 	else if (err_type == PIPENDERR)
-		ft_putstr_fd("minishell: syntax error near unexpected token `|'\n", 2);
+		ft_putstr_fd("minishell: syntax error near unexpected token\n", 2);
 	else if (err_type == IS_DIR)
 		ft_putstr_fd("minishell: Is a directory: ", 2);
 	else if (err_type == NOT_DIR)
