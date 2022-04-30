@@ -19,12 +19,16 @@ static char	*get_substr_var(char *str, int i, t_prompt *prompt)
 	char	*path;
 	char	*var;
 
+	printf("str = %s\n", str);
+	printf("i1 = %d\n", i);
 	pos = ft_strchr_set(&str[i], "|\"\'$?>< /=") + (ft_strchr("$?", str[i]) != 0);
 	if (pos == -1)
 		pos = ft_strlen(str) - 1;
 	aux = ft_substr(str, 0, i - 1);
 	var = mini_getenv(&str[i], prompt->envp,
 			ft_strchr_set(&str[i], "\"\'$|></= "));
+	if (!var && ft_isdigit(str[i]))
+		var = ft_strdup(&str[i + 1]);
 	if (!var && str[i] == '?')
 		var = ft_itoa(g_status);
 	path = ft_strjoin(aux, var);
