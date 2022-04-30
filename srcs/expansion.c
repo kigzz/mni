@@ -19,8 +19,6 @@ static char	*get_substr_var(char *str, int i, t_prompt *prompt)
 	char	*path;
 	char	*var;
 
-	printf("str = %s\n", str);
-	printf("i1 = %d\n", i);
 	pos = ft_strchr_set(&str[i], "|\"\'$?>< /=") + (ft_strchr("$?", str[i]) != 0);
 	if (pos == -1)
 		pos = ft_strlen(str) - 1;
