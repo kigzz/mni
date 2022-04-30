@@ -68,7 +68,7 @@ static char	**ft_fill_array(char **aux, char *s, char *set, int i[3])
 char	**ft_cmd_split(char const *s, char *set)
 {
 	char	**aux;
-	int		nwords;
+	int		words;
 	int		i[3];
 
 	i[0] = 0;
@@ -76,13 +76,13 @@ char	**ft_cmd_split(char const *s, char *set)
 	i[2] = 0;
 	if (!s)
 		return (NULL);
-	nwords = ft_count_words((char *)s, set, 0);
-	if (nwords == -1)
+	words = ft_count_words((char *)s, set, 0);
+	if (words == -1)
 		return (NULL);
-	aux = malloc((nwords + 1) * sizeof(char *));
+	aux = malloc((words + 1) * sizeof(char *));
 	if (aux == NULL)
 		return (NULL);
 	aux = ft_fill_array(aux, (char *)s, set, i);
-	aux[nwords] = NULL;
+	aux[words] = NULL;
 	return (aux);
 }
