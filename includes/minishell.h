@@ -100,6 +100,7 @@ void	free_content(void *content);
 void	handle_signal(int sig);
 void	handle_sigint_exec(int sig);
 void	handle_signal_heredoc(int sig);
+void	handle_status(t_prompt *p, int is_exit, int i);
 void	sig_and_exec(t_prompt *prompt, t_list *cmd);
 
 #endif

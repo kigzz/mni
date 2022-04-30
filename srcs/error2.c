@@ -31,3 +31,19 @@ void	err_cmd(t_prompt *prompt, const t_mini *n)
 		prompt->error = 1;
 	}
 }
+
+void	handle_status(t_prompt *p, int is_exit, int i)
+{
+	i = ft_lstsize(p->cmds);
+	if (!is_exit && g_status == 13)									// SIGPIPE IGNORE
+		g_status = 0;
+	if (!is_exit && g_status == 2 && ft_lstsize(p->cmds) == 1) // cat + ctrl c
+		g_status = 130;
+	if (!is_exit && p->error == 0 && g_status == 2)						// cat | cat | ls
+		g_status = 0;
+	if (i > 1 && !is_exit && p->error == 1 && (g_status == 0 || g_status == 2)) // cmd not found - 2 commandes ou plus
+	{
+		g_status = 127;
+		p->error = 0;
+	}
+}
