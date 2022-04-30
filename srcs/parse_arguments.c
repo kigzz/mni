@@ -17,18 +17,10 @@ static char	**split_all(char **args, t_prompt *prompt)
 	char	**subsplit;
 	int		i;
 	int		quotes[2];
-	char	*tmp;
 
 	i = -1;
-	tmp = NULL;
 	while (args && args[++i])
 	{
-		if (args[i][0] == '$' && ft_isdigit(args[i][1]))
-		{
-			tmp = ft_strdup(&args[i][2]);
-			free(args[i]);
-			args[i] = tmp;
-		}
 		if (ft_matrixlen(args) == 1 || (i - 1 >= 0
 				&& (args[i][0] == '$' || args[i][0] == '\"')
 				&& (args[i - 1][0] != '<' && args[i - 1][1] != '<')))
