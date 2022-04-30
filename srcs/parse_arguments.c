@@ -21,7 +21,8 @@ static char	**split_all(char **args, t_prompt *prompt)
 	i = -1;
 	while (args && args[++i])
 	{
-		if (i - 1 >= 0 && (args[i][0] == '$' || args[i][0] == '\'' || args[i][0] == '\"')
+		if (i - 1 >= 0 && (args[i][0] == '$' || args[i][0] == '\''
+		|| args[i][0] == '\"')
 		&& (args[i - 1][0] != '<' && args[i - 1][1] != '<'))
 			args[i] = expand_vars(args[i], -1, quotes, prompt);
 		subsplit = ft_cmd_split(args[i], "<|>");
@@ -42,7 +43,6 @@ static void	*parse_args(char **args, t_prompt *p)
 	if (!p->cmds)
 		return (p);
 	i = ft_lstsize(p->cmds);
-
 	g_status = builtin(p, p->cmds, &is_exit, 0);
 	while (i-- > 0)
 		waitpid(-1, &g_status, 0);
@@ -107,7 +107,8 @@ void	*check_args(char *out, t_prompt *p)
 	}
 	if (!check_piperr(a))
 	{
-		mini_perror(PIPENDERR, NULL, 2);
+		ft_putstr_fd("minishell: syntax error\n", 2);
+		g_status = 2;
 		ft_matrix_free(&a);
 		return ("");
 	}

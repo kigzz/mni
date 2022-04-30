@@ -47,7 +47,7 @@ t_mini	*get_outfile1(t_mini *node, char **args, int *i)
 
 	flags[0] = 1;
 	flags[1] = 0;
-	nl = "minishell: syntax error near unexpected token";
+	nl = "minishell: syntax error near unexpected token `newline'";
 	(*i)++;
 	if (args[*i])
 		node->outfile = get_fd(node->outfile, args[*i], flags);
@@ -74,7 +74,7 @@ t_mini	*get_outfile2(t_mini *node, char **args, int *i)
 
 	flags[0] = 1;
 	flags[1] = 1;
-	nl = "minishell: syntax error near unexpected token";
+	nl = "minishell: syntax error near unexpected token `newline'";
 	(*i)++;
 	if (args[++(*i)])
 		node->outfile = get_fd(node->outfile, args[*i], flags);
@@ -99,7 +99,7 @@ t_mini	*get_infile1(t_mini *node, char **args, int *i)
 
 	flags[0] = 0;
 	flags[1] = 0;
-	nl = "minishell: syntax error near unexpected token";
+	nl = "minishell: syntax error near unexpected token `newline'";
 	(*i)++;
 	if (args[*i])
 		node->infile = get_fd(node->infile, args[*i], flags);
@@ -127,7 +127,7 @@ t_mini	*get_infile2(t_mini *node, char **args, int *i)
 	str[1] = NULL;
 	aux[0] = NULL;
 	aux[1] = "minishell: warning: here-document delimited by end-of-file";
-	nl = "minishell: syntax error near unexpected token";
+	nl = "minishell: syntax error near unexpected token `newline'";
 	(*i)++;
 	if (args[++(*i)])
 	{
