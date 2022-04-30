@@ -21,7 +21,7 @@ static char	**split_all(char **args, t_prompt *prompt)
 	i = -1;
 	while (args && args[++i])
 	{
-		if ((args[i][0] == '$' || args[i][0] == '\'' || args[i][0] == '\"')
+		if (i - 1 >= 0 && (args[i][0] == '$' || args[i][0] == '\'' || args[i][0] == '\"')
 		&& (args[i - 1][0] != '<' && args[i - 1][1] != '<'))
 			args[i] = expand_vars(args[i], -1, quotes, prompt);
 		subsplit = ft_cmd_split(args[i], "<|>");
@@ -42,16 +42,18 @@ static void	*parse_args(char **args, t_prompt *p)
 	if (!p->cmds)
 		return (p);
 	i = ft_lstsize(p->cmds);
+
 	g_status = builtin(p, p->cmds, &is_exit, 0);
 	while (i-- > 0)
 		waitpid(-1, &g_status, 0);
-	if (!is_exit && g_status == 13)
+	i = ft_lstsize(p->cmds);
+	if (!is_exit && g_status == 13)									// SIGPIPE IGNORE
 		g_status = 0;
-	if (!is_exit && g_status == 2 && ft_lstsize(p->cmds) == 1)
+	if (!is_exit && g_status == 2 && ft_lstsize(p->cmds) == 1) // cat + ctrl c
 		g_status = 130;
-	if (!is_exit && p->error == 0 && g_status == 2)
+	if (!is_exit && p->error == 0 && g_status == 2)						// cat | cat | ls
 		g_status = 0;
-	if (!is_exit && p->error == 1 && (g_status == 0 || g_status == 2))
+	if (i > 1 && !is_exit && p->error == 1 && (g_status == 0 ||g_status == 2)) // cmd not found - 2+ commandes
 	{
 		g_status = 127;
 		p->error = 0;
