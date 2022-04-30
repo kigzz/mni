@@ -41,7 +41,8 @@ void	handle_status(t_prompt *p, int is_exit, int i)
 		g_status = 130;
 	if (!is_exit && p->error == 0 && g_status == 2)						// cat | cat | ls
 		g_status = 0;
-	if (i > 1 && !is_exit && p->error == 1 && (g_status == 0 || g_status == 2)) // cmd not found - 2 commandes ou plus
+	if (i > 1 && !is_exit && p->error == 1
+		&& (g_status == 0 || g_status == 2 || g_status == 131)) // cmd not found - 2 commandes ou plus
 	{
 		g_status = 127;
 		p->error = 0;
