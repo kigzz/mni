@@ -22,8 +22,8 @@ static char	**split_all(char **args, t_prompt *prompt)
 	while (args && args[++i])
 	{
 		if (ft_matrixlen(args) == 1 || (i - 1 >= 0
-		&& (args[i][0] == '$' || args[i][0] == '\"')
-		&& (args[i - 1][0] != '<' && args[i - 1][1] != '<')))
+				&& (args[i][0] == '$' || args[i][0] == '\"')
+				&& (args[i - 1][0] != '<' && args[i - 1][1] != '<')))
 			args[i] = expand_vars(args[i], -1, quotes, prompt);
 		subsplit = ft_cmd_split(args[i], "<|>");
 		ft_replace_in_matrix(&args, subsplit, i);
