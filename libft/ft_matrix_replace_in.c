@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_replace_in_matrix.c                             :+:      :+:    :+:   */
+/*   ft_matrix_replace_in.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpouchep <bpouchep@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-char	**ft_replace_in_matrix(char ***big, char **small, int n)
+char	**ft_matrix_replace_in(char ***big, char **small, int n)
 {
 	char	**aux;
 	int		i[3];

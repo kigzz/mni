@@ -127,7 +127,7 @@ int	mini_unset(t_prompt *prompt)
 				argv[i[0]] = aux;
 			}
 			if (var_in_envp(argv[i[0]], prompt->envp, i))
-				ft_replace_in_matrix(&prompt->envp, NULL, i[1]);
+				ft_matrix_replace_in(&prompt->envp, NULL, i[1]);
 		}
 	}
 	return (0);

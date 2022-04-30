@@ -88,6 +88,6 @@ char		**ft_matrix_dup(char **m);
 int			ft_putmatrix_fd(char **m, int nl, int fd);
 int			ft_matrixlen(char **m);
 char		**ft_matrix_extend(char **in, char *newstr);
-char		**ft_replace_in_matrix(char ***big, char **small, int n);
+char		**ft_matrix_replace_in(char ***big, char **small, int n);
 
 #endif

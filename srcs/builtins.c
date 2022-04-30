@@ -37,6 +37,7 @@ int	builtin(t_prompt *prompt, t_list *cmd, int *is_exit, int n)
 			sig_and_exec(prompt, cmd);
 		cmd = cmd->next;
 	}
+	prompt->is_heredoc = 0;
 	return (g_status);
 }
 
