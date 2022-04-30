@@ -100,6 +100,12 @@ int	mini_pwd(void)
 	char	*buf;
 
 	buf = getcwd(NULL, 0);
+	if (buf == NULL)
+	{
+		ft_putstr_fd("pwd: error retrieving current directory: ", 2);
+		ft_putstr_fd("getcwd: cannot access parent directories: ", 2);
+		ft_putstr_fd("No such files or directory\n", 2);
+	}
 	ft_putendl_fd(buf, 1);
 	free(buf);
 	return (0);
