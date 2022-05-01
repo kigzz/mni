@@ -98,7 +98,7 @@ void	*check_args(char *out, t_prompt *p)
 	}
 	if (!check_piperr(a))
 	{
-		ft_putstr_fd("minishell: syntax error\n", 2);
+		ft_putstr_fd("minishell: syntax error near unexpected token\n", 2);
 		g_status = 2;
 		ft_matrix_free(&a);
 		return ("");
