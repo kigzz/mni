@@ -36,12 +36,20 @@ void	handle_status(t_prompt *p, int is_exit, int i)
 {
 	i = ft_lstsize(p->cmds);
 	if (!is_exit && g_status == 13)									// SIGPIPE IGNORE
+	{
 		g_status = 0;
-	if (!is_exit && g_status == 2 && ft_lstsize(p->cmds) == 1) // cat + ctrl c
+	}
+	else if (!is_exit && g_status == 0 && i == 1) // cat + heredoc ++ ctrl c
 		g_status = 130;
-	if (!is_exit && p->error == 0 && g_status == 2)						// cat | cat | ls
+	else if (!is_exit && g_status == 2 && i == 1) // cat + ctrl c
+	{
+		g_status = 130;
+	}
+	else if (!is_exit && p->error == 0 && g_status == 2)						// cat | cat |
+	{
 		g_status = 0;
-	if (i > 1 && !is_exit && p->error == 1
+	}
+	else if (i > 1 && !is_exit && p->error == 1
 		&& (g_status == 0 || g_status == 2 || g_status == 131)) // cmd not found - 2 commandes ou plus
 	{
 		g_status = 127;
