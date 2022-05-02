@@ -39,16 +39,21 @@ static void	*parse_args(char **args, t_prompt *p)
 {
 	int	is_exit;
 	int	i;
+	int status;
 
 	is_exit = 0;
+
 	p->cmds = fill_nodes(split_all(args, p), -1);
 	if (!p->cmds)
 		return (p);
 	i = ft_lstsize(p->cmds);
 	g_status = builtin(p, p->cmds, &is_exit, 0);
+	status = g_status;
 	while (i-- > 0)
 		waitpid(-1, &g_status, 0);
-	handle_status(p, is_exit, i);
+	printf("g_status after wait = %d\n", g_status);
+
+	handle_status(p, is_exit, i, status);
 	if (g_status > 255)
 		g_status = g_status / 255;
 	if (args && is_exit)
@@ -73,11 +78,11 @@ static int	output_check(char *out, t_prompt *p)
 	return (0);
 }
 
-static void	last_cmd(t_prompt *p, t_mini *n)
+static void	setenv_lastcmd(t_prompt *p, t_mini *n)
 {
 	if (p && p->cmds && n && n->full_cmd && ft_lstsize(p->cmds) == 1)
-		p->envp = mini_setenv("_", n->full_cmd[ft_matrixlen(n->full_cmd) - 1], \
-			p->envp, 1);
+		p->envp = mini_setenv("_", n->full_cmd[ft_matrixlen(n->full_cmd) - 1],
+				p->envp, 1);
 	if (p && p->cmds)
 		ft_lstclear(&p->cmds, free_content);
 }
@@ -106,6 +111,7 @@ void	*check_args(char *out, t_prompt *p)
 	p = parse_args(a, p);
 	if (p && p->cmds)
 		n = p->cmds->content;
-	last_cmd(p, n);
+	setenv_lastcmd(p, n);
+//	printf("g_status end = %d\n", g_status);
 	return (p);
 }

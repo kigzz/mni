@@ -20,7 +20,7 @@ LIBFT_FLAGS		=	-Llibft -lft
 
 SRCS    		=	main.c handle_signal.c builtins.c builtins_utils.c env.c error.c error2.c execution.c	\
 					ft_cmd_split.c ft_cmd_trim.c ft_strtrim_all.c get_cmd.c get_parameters.c heredoc.c	\
-					parse_arguments.c fill_nodes.c expansion.c
+					parse_arguments.c fill_nodes.c expansion.c last_cmd.c
 SRCS_DIR		=	srcs/
 SRCS_PATH		=	$(addprefix $(SRCS_DIR), $(SRCS))
 OBJ_SRCS    	=	$(SRCS_PATH:%.c=%.o)

@@ -27,6 +27,7 @@ char	*get_here_str(char *str[2], size_t len, char *limit, char *warn)
 		if (!str[0])
 		{
 			printf("%s (wanted `%s\')\n", warn, limit);
+			g_status = -1;
 			break ;
 		}
 		temp = str[0];

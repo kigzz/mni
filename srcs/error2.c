@@ -32,27 +32,29 @@ void	err_cmd(t_prompt *prompt, const t_mini *n)
 	}
 }
 
-void	handle_status(t_prompt *p, int is_exit, int i)
+void	handle_status(t_prompt *p, int is_exit, int i, int status)
 {
 	i = ft_lstsize(p->cmds);
-	if (!is_exit && g_status == 13)									// SIGPIPE IGNORE
+	if (i > 1 && !is_exit && (g_status == 13 || g_status == 0 || g_status == 131 || g_status == 2))// SIGPIPE IGNORE
 	{
-		g_status = 0;
+		if (p->last_cmd == 1)
+			g_status = 0;
+		else
+			g_status = 127;
 	}
-	else if (!is_exit && g_status == 0 && i == 1) // cat + heredoc ++ ctrl c
+	else if (!is_exit && g_status == 2)				// cat + ctrl c
 		g_status = 130;
-	else if (!is_exit && g_status == 2 && i == 1) // cat + ctrl c
+	else if (p->is_heredoc == 1)
 	{
-		g_status = 130;
+			if (status == -1)
+				g_status = 0;
+			else if (status == 130)
+				g_status = 130;
 	}
-	else if (!is_exit && p->error == 0 && g_status == 2)						// cat | cat |
-	{
-		g_status = 0;
-	}
-	else if (i > 1 && !is_exit && p->error == 1
-		&& (g_status == 0 || g_status == 2 || g_status == 131)) // cmd not found - 2 commandes ou plus
-	{
-		g_status = 127;
-		p->error = 0;
-	}
+
+//	else if (!is_exit && g_status == 0 && i == 1) // cat + heredoc ++ ctrl c
+//		g_status = 130;
+	p->last_cmd = 0;
+	p->is_heredoc = 0;
+
 }

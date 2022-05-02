@@ -35,6 +35,7 @@ typedef struct s_prompt
 {
 	t_list	*cmds;
 	char	**envp;
+	int		last_cmd;
 	int		error;
 	int		is_heredoc;
 }			t_prompt;
@@ -87,6 +88,7 @@ t_mini	*get_outfile2(t_mini *node, char **args, int *i);
 t_mini	*get_infile1(t_mini *node, char **args, int *i);
 t_mini	*get_infile2(t_mini *node, char **args, int *i);
 void	*exec_cmd(t_prompt *prompt, t_list *cmd);
+int		last_cmd(t_prompt *prompt, char *args);
 void	*check_to_fork(t_prompt *prompt, t_list *cmd, int fd[2]);
 void	child_builtin(t_prompt *prompt, t_mini *n, int l, t_list *cmd);
 void	get_cmd(t_prompt *prompt, t_list *start, char **split_path, char *path);
@@ -100,7 +102,7 @@ void	free_content(void *content);
 void	handle_signal(int sig);
 void	handle_sigint_exec(int sig);
 void	handle_signal_heredoc(int sig);
-void	handle_status(t_prompt *p, int is_exit, int i);
+void	handle_status(t_prompt *p, int is_exit, int i, int status);
 void	sig_and_exec(t_prompt *prompt, t_list *cmd);
 
 #endif
