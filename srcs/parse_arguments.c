@@ -48,11 +48,9 @@ static void	*parse_args(char **args, t_prompt *p)
 		return (p);
 	}
 	i = ft_lstsize(p->cmds);
-	g_status = builtin(p, p->cmds, &is_exit, 0);
+	g_status = builtin(p, p->cmds, &is_exit);
 	while (i-- > 0)
-	{
 		waitpid(-1, &g_status, 0);
-	}
 	handle_status(p, is_exit, i);
 	if (g_status > 255)
 		g_status = g_status / 255;

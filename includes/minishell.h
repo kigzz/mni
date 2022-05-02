@@ -64,7 +64,7 @@ enum	e_mini_error
 
 int		check_piperr(char **a);
 void	ft_replace_tabs_returns(char *str);
-int		builtin(t_prompt *prompt, t_list *cmd, int *is_exit, int n);
+int		builtin(t_prompt *prompt, t_list *cmd, int *is_exit);
 int		is_builtin(t_mini *n);
 int		mini_cd(t_prompt *prompt);
 void	cd_error(char **str[2]);

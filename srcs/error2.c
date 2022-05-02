@@ -34,6 +34,7 @@ void	err_cmd(t_prompt *prompt, const t_mini *n)
 
 void	handle_status(t_prompt *p, int is_exit, int i)
 {
+
 	i = ft_lstsize(p->cmds);
 	if (i > 1 && !is_exit && (g_status == 13 || g_status == 0 || g_status == 131 || g_status == 2))// SIGPIPE IGNORE
 	{
