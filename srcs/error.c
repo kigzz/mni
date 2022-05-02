@@ -24,16 +24,39 @@ int	check_piperr(char **a)
 	while (a[i])
 	{
 		if ((!ft_strncmp(">", a[i], 1) || !ft_strncmp("<", a[i], 1)
-			 || !ft_strncmp(">>", a[i], 2) || !ft_strncmp("<<", a[i], 2))
+				|| !ft_strncmp(">>", a[i], 2) || !ft_strncmp("<<", a[i], 2))
 			&& (a[i + 1] && ft_strchr("<|>", a[i + 1][0])))
+		{
+			printf("1\n");
 			return (0);
+		}
 		if ((!ft_strncmp(">", a[i], 1) || !ft_strncmp("<", a[i], 1))
 			&& a[i][1] && a[i][0] != a[i][1] && ft_strchr("<|>", a[i][1]))
+		{
+			printf("2\n");
 			return (0);
+		}
 		if (a[i][1] && (!ft_strncmp(">>", a[i], 2)
 						|| !ft_strncmp("<<", a[i], 2))
 			&& a[i][2] && ft_strchr("<|>", a[i][2]))
+		{
+			printf("3\n");
 			return (0);
+		}
+		if (!a[i + 1] && (a[i][ft_strlen(a[i]) - 1] == '<'
+			|| a[i][ft_strlen(a[i]) - 1] == '>'
+		|| a[i][ft_strlen(a[i]) - 1] == '|'))
+		{
+			printf("4\n");
+			return (0);
+		}
+		if (a[i + 1] && (a[i][ft_strlen(a[i]) - 1] == '>'
+			|| a[i][ft_strlen(a[i]) - 1] == '<') &&
+		(a[i + 1][0] == '>' || a[i + 1][0] == '<' || a[i + 1][0] == '|'))
+		{
+			printf("5\n");
+			return (0);
+		}
 		i++;
 	}
 	return (1);
