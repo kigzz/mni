@@ -39,10 +39,9 @@ static void	*parse_args(char **args, t_prompt *p)
 {
 	int	is_exit;
 	int	i;
-	int status;
+	int	status;
 
 	is_exit = 0;
-
 	p->cmds = fill_nodes(split_all(args, p), -1);
 	if (!p->cmds)
 		return (p);
@@ -51,8 +50,6 @@ static void	*parse_args(char **args, t_prompt *p)
 	status = g_status;
 	while (i-- > 0)
 		waitpid(-1, &g_status, 0);
-	printf("g_status after wait = %d\n", g_status);
-
 	handle_status(p, is_exit, i, status);
 	if (g_status > 255)
 		g_status = g_status / 255;
@@ -112,6 +109,5 @@ void	*check_args(char *out, t_prompt *p)
 	if (p && p->cmds)
 		n = p->cmds->content;
 	setenv_lastcmd(p, n);
-//	printf("g_status end = %d\n", g_status);
 	return (p);
 }

@@ -51,10 +51,6 @@ void	handle_status(t_prompt *p, int is_exit, int i, int status)
 			else if (status == 130)
 				g_status = 130;
 	}
-
-//	else if (!is_exit && g_status == 0 && i == 1) // cat + heredoc ++ ctrl c
-//		g_status = 130;
 	p->last_cmd = 0;
 	p->is_heredoc = 0;
-
 }
