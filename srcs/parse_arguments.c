@@ -39,18 +39,21 @@ static void	*parse_args(char **args, t_prompt *p)
 {
 	int	is_exit;
 	int	i;
-	int	status;
 
 	is_exit = 0;
 	p->cmds = fill_nodes(split_all(args, p), -1);
 	if (!p->cmds)
+	{
+		p->is_heredoc = 0;
 		return (p);
+	}
 	i = ft_lstsize(p->cmds);
 	g_status = builtin(p, p->cmds, &is_exit, 0);
-	status = g_status;
 	while (i-- > 0)
+	{
 		waitpid(-1, &g_status, 0);
-	handle_status(p, is_exit, i, status);
+	}
+	handle_status(p, is_exit, i);
 	if (g_status > 255)
 		g_status = g_status / 255;
 	if (args && is_exit)

@@ -27,7 +27,6 @@ char	*get_here_str(char *str[2], size_t len, char *limit, char *warn)
 		if (!str[0])
 		{
 			printf("%s (wanted `%s\')\n", warn, limit);
-			g_status = -1;
 			break ;
 		}
 		temp = str[0];
@@ -54,6 +53,9 @@ int	get_here_doc(char *str[2], char *aux[2])
 	free(str[1]);
 	close(fd[WRITE_END]);
 	if (g_status == 130)
+	{
 		close(fd[READ_END]);
+		return (-1);
+	}
 	return (fd[READ_END]);
 }

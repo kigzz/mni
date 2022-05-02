@@ -32,7 +32,7 @@ void	err_cmd(t_prompt *prompt, const t_mini *n)
 	}
 }
 
-void	handle_status(t_prompt *p, int is_exit, int i, int status)
+void	handle_status(t_prompt *p, int is_exit, int i)
 {
 	i = ft_lstsize(p->cmds);
 	if (i > 1 && !is_exit && (g_status == 13 || g_status == 0 || g_status == 131 || g_status == 2))// SIGPIPE IGNORE
@@ -44,13 +44,6 @@ void	handle_status(t_prompt *p, int is_exit, int i, int status)
 	}
 	else if (!is_exit && g_status == 2)				// cat + ctrl c
 		g_status = 130;
-	else if (p->is_heredoc == 1)
-	{
-			if (status == -1)
-				g_status = 0;
-			else if (status == 130)
-				g_status = 130;
-	}
 	p->last_cmd = 0;
 	p->is_heredoc = 0;
 }
