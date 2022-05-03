@@ -26,8 +26,8 @@ int check_piperr2(char **a)
 		if (ft_strnstr(a[i], ">>>", len) || ft_strnstr(a[i], ">>|", len) || ft_strnstr(a[i], ">><", len)
 		|| ft_strnstr(a[i], "><", len) || ft_strnstr(a[i], ">|", len) || ft_strnstr(a[i], "<<<", len)
 		|| ft_strnstr(a[i], "<<|", len) || ft_strnstr(a[i], "<<>", len) || ft_strnstr(a[i], "<>", len)
-		|| ft_strnstr(a[i], "<|", len) || ft_strnstr(a[i], "||", len) || ft_strnstr(a[i], "|>", len)
-		|| ft_strnstr(a[i], "|<", len))
+		|| ft_strnstr(a[i], "<|", len) || ft_strnstr(a[i], "||", len))//|| ft_strnstr(a[i], "|", len)
+//		|| ft_strnstr(a[i], "|<", len))
 		{
 			printf("Error strnstr\n");
 			return (0);
