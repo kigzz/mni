@@ -12,6 +12,15 @@
 
 #include "../includes/minishell.h"
 
+int	check_a(char **a, int i, int j)
+{
+	return (!ft_strncmp("<>", &a[i][j], 2)
+			|| !ft_strncmp("><", &a[i][j], 2) || !ft_strncmp("<|", &a[i][j], 2)
+			|| !ft_strncmp(">|", &a[i][j], 2) || !ft_strncmp("||", &a[i][j], 2)
+			|| (a[i][j +2] && (!ft_strncmp(">>>", &a[i][j], 3) ||
+			!ft_strncmp("<<<", &a[i][j], 3))));
+}
+
 int	check_piperr2(char **a)
 {
 	int	i;
@@ -30,11 +39,7 @@ int	check_piperr2(char **a)
 		{
 			q[0] = (q[0] + (!q[1] && a[i][j] == '\'')) % 2;
 			q[1] = (q[1] + (!q[0] && a[i][j] == '\"')) % 2;
-			if (!(q[0] || q[1]) && a[i][j +1] && (!ft_strncmp("<>", &a[i][j], 2)
-			|| !ft_strncmp("><", &a[i][j], 2) || !ft_strncmp("<|", &a[i][j], 2)
-			|| !ft_strncmp(">|", &a[i][j], 2) || !ft_strncmp("||", &a[i][j], 2)
-			|| (a[i][j +2] && (!ft_strncmp(">>>", &a[i][j], 3) || \
-			!ft_strncmp("<<<", &a[i][j], 3)))))
+			if (!(q[0] || q[1]) && a[i][j +1] && check_a(a, i, j))
 				return (0);
 			j++;
 		}
@@ -62,33 +67,6 @@ int	check_piperr(char **a)
 	if (ft_strchr("<|>", a[i -1][ft_strlen(a[i -1]) - 1]))
 		return (0);
 	return (1);
-}
-
-void	*mini_perror(int err_type, char *param, int err)
-{
-	g_status = err;
-	if (err_type == QUOTE)
-		ft_putstr_fd("minishell: error while looking for matching quote\n", 2);
-	else if (err_type == NDIR)
-		ft_putstr_fd("minishell: No such file or directory: ", 2);
-	else if (err_type == NPERM)
-		ft_putstr_fd("minishell: permission denied: ", 2);
-	else if (err_type == NCMD)
-		ft_putstr_fd("minishell: command not found: ", 2);
-	else if (err_type == DUPERR)
-		ft_putstr_fd("minishell: dup2 failed\n", 2);
-	else if (err_type == FORKERR)
-		ft_putstr_fd("minishell: fork failed\n", 2);
-	else if (err_type == PIPERR)
-		ft_putstr_fd("minishell: error creating pipe\n", 2);
-	else if (err_type == PIPENDERR)
-		ft_putstr_fd("minishell: syntax error near unexpected token `|'\n", 2);
-	else if (err_type == IS_DIR)
-		ft_putstr_fd("minishell: Is a directory: ", 2);
-	else if (err_type == NOT_DIR)
-		ft_putstr_fd("minishell: Not a directory: ", 2);
-	ft_putendl_fd(param, 2);
-	return (NULL);
 }
 
 int	mini_exit(t_list *cmd, int *is_exit)
@@ -142,18 +120,4 @@ void	cd_error(char **str[2])
 		mini_perror(NOT_DIR, str[0][1], 1);
 	if (str[0][1] && dir)
 		closedir(dir);
-}
-
-void	free_content(void *content)
-{
-	t_mini	*node;
-
-	node = content;
-	ft_matrix_free(&node->full_cmd);
-	free(node->full_path);
-	if (node->infile != STDIN_FILENO && node->infile != -1)
-		close(node->infile);
-	if (node->outfile != STDOUT_FILENO && node->outfile != -1)
-		close(node->outfile);
-	free(node);
 }
