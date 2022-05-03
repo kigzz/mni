@@ -22,7 +22,8 @@ void	builtin2(t_prompt *prompt, t_list *cmd, int *is_exit, char **a)
 	if (a && !ft_strncmp(*a, "exit", n) && n == 4)
 	{
 		g_status = mini_exit(cmd, is_exit);
-		ft_matrix_free(&prompt->envp);
+		if (g_status != 1)
+			ft_matrix_free(&prompt->envp);
 	}
 	else if (!cmd->next && a && !ft_strncmp(*a, "cd", n) && n == 2)
 		g_status = mini_cd(prompt);

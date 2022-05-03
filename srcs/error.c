@@ -16,12 +16,19 @@ int check_piperr2(char **a)
 {
 	int i;
 	size_t len;
+	int	quotes[2];
 
+	quotes[0] = 0;
+	quotes[1] = 0;
 	i = 1;
 	if (!a[0])
 		return (1);
 	while (a[i])
 	{
+		quotes[0] = (quotes[0] + (!quotes[1] && a[i][0] == '\'')) % 2;
+		quotes[1] = (quotes[1] + (!quotes[0] && a[i][0] == '\"')) % 2;
+		if (quotes[0] || quotes[1])
+			return (1);
 		len = ft_strlen(a[i]);
 		if (ft_strnstr(a[i], ">>>", len) || ft_strnstr(a[i], ">>|", len) || ft_strnstr(a[i], ">><", len)
 		|| ft_strnstr(a[i], "><", len) || ft_strnstr(a[i], ">|", len) || ft_strnstr(a[i], "<<<", len)
@@ -40,7 +47,10 @@ int check_piperr2(char **a)
 int	check_piperr(char **a)
 {
 	int	i;
+	int	quotes[2];
 
+	quotes[0] = 0;
+	quotes[1] = 0;
 	if (!a[0])
 		return (1);
 	if (a[0][0] == '|')
@@ -48,6 +58,10 @@ int	check_piperr(char **a)
 	i = 0;
 	while (a[i])
 	{
+		quotes[0] = (quotes[0] + (!quotes[1] && a[i][0] == '\'')) % 2;
+		quotes[1] = (quotes[1] + (!quotes[0] && a[i][0] == '\"')) % 2;
+		if (quotes[0] || quotes[1])
+			return (1);
 		if ((!ft_strncmp(">", a[i], 1) || !ft_strncmp("<", a[i], 1)
 				|| !ft_strncmp(">>", a[i], 2) || !ft_strncmp("<<", a[i], 2))
 			&& (a[i + 1] && ft_strchr("<|>", a[i + 1][0])))
