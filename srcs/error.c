@@ -12,32 +12,31 @@
 
 #include "../includes/minishell.h"
 
-int check_piperr2(char **a)
+int	check_piperr2(char **a)
 {
-	int i;
-	size_t len;
-	int	quotes[2];
+	int	i;
+	int	j;
+	int	q[2];
 
-	quotes[0] = 0;
-	quotes[1] = 0;
-	i = 1;
+	q[0] = 0;
+	q[1] = 0;
+	i = 0;
 	if (!a[0])
 		return (1);
 	while (a[i])
 	{
-		quotes[0] = (quotes[0] + (!quotes[1] && a[i][0] == '\'')) % 2;
-		quotes[1] = (quotes[1] + (!quotes[0] && a[i][0] == '\"')) % 2;
-		if (quotes[0] || quotes[1])
-			return (1);
-		len = ft_strlen(a[i]);
-		if (ft_strnstr(a[i], ">>>", len) || ft_strnstr(a[i], ">>|", len) || ft_strnstr(a[i], ">><", len)
-		|| ft_strnstr(a[i], "><", len) || ft_strnstr(a[i], ">|", len) || ft_strnstr(a[i], "<<<", len)
-		|| ft_strnstr(a[i], "<<|", len) || ft_strnstr(a[i], "<<>", len) || ft_strnstr(a[i], "<>", len)
-		|| ft_strnstr(a[i], "<|", len) || ft_strnstr(a[i], "||", len))//|| ft_strnstr(a[i], "|", len)
-//		|| ft_strnstr(a[i], "|<", len))
+		j = 0;
+		while (a[i][j])
 		{
-			printf("Error strnstr\n");
-			return (0);
+			q[0] = (q[0] + (!q[1] && a[i][j] == '\'')) % 2;
+			q[1] = (q[1] + (!q[0] && a[i][j] == '\"')) % 2;
+			if (!(q[0] || q[1]) && a[i][j +1] && (!ft_strncmp("<>", &a[i][j], 2)
+			|| !ft_strncmp("><", &a[i][j], 2) || !ft_strncmp("<|", &a[i][j], 2)
+			|| !ft_strncmp(">|", &a[i][j], 2) || !ft_strncmp("||", &a[i][j], 2)
+			|| (a[i][j +2] && (!ft_strncmp(">>>", &a[i][j], 3) || \
+			!ft_strncmp("<<<", &a[i][j], 3)))))
+				return (0);
+			j++;
 		}
 		i++;
 	}
@@ -47,10 +46,7 @@ int check_piperr2(char **a)
 int	check_piperr(char **a)
 {
 	int	i;
-	int	quotes[2];
 
-	quotes[0] = 0;
-	quotes[1] = 0;
 	if (!a[0])
 		return (1);
 	if (a[0][0] == '|')
@@ -58,46 +54,13 @@ int	check_piperr(char **a)
 	i = 0;
 	while (a[i])
 	{
-		quotes[0] = (quotes[0] + (!quotes[1] && a[i][0] == '\'')) % 2;
-		quotes[1] = (quotes[1] + (!quotes[0] && a[i][0] == '\"')) % 2;
-		if (quotes[0] || quotes[1])
-			return (1);
-		if ((!ft_strncmp(">", a[i], 1) || !ft_strncmp("<", a[i], 1)
-				|| !ft_strncmp(">>", a[i], 2) || !ft_strncmp("<<", a[i], 2))
-			&& (a[i + 1] && ft_strchr("<|>", a[i + 1][0])))
-		{
-			printf("1\n");
+		if (a[i][0] && (ft_strchr("<|>", a[i][ft_strlen(a[i]) - 1])
+		&& a[i +1] && a[i +1][0] && ft_strchr("<|>", a[i +1][0])))
 			return (0);
-		}
-		if ((!ft_strncmp(">", a[i], 1) || !ft_strncmp("<", a[i], 1))
-			&& a[i][1] && a[i][0] != a[i][1] && ft_strchr("<|>", a[i][1]))
-		{
-			printf("2\n");
-			return (0);
-		}
-		if (a[i][1] && (!ft_strncmp(">>", a[i], 2)
-						|| !ft_strncmp("<<", a[i], 2))
-			&& a[i][2] && ft_strchr("<|>", a[i][2]))
-		{
-			printf("3\n");
-			return (0);
-		}
-		if (!a[i + 1] && (a[i][ft_strlen(a[i]) - 1] == '<'
-			|| a[i][ft_strlen(a[i]) - 1] == '>'
-		|| a[i][ft_strlen(a[i]) - 1] == '|'))
-		{
-			printf("4\n");
-			return (0);
-		}
-		if (a[i + 1] && (a[i][ft_strlen(a[i]) - 1] == '>'
-			|| a[i][ft_strlen(a[i]) - 1] == '<') &&
-		(a[i + 1][0] == '>' || a[i + 1][0] == '<' || a[i + 1][0] == '|'))
-		{
-			printf("5\n");
-			return (0);
-		}
 		i++;
 	}
+	if (ft_strchr("<|>", a[i -1][ft_strlen(a[i -1]) - 1]))
+		return (0);
 	return (1);
 }
 
