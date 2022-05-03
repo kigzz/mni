@@ -69,7 +69,7 @@ int			ft_strchr_char(const char *s, int c);
 int			ft_strchr_set(const char *s, char *set);
 char		*ft_strrchr(const char *s, int c);
 char		*ft_strdup(const char *s);
-char		*ft_strnstr(const char *big, const char *little, size_t len);
+char		*ft_strnstr(const char *haystack, const char *needle, size_t len);
 int			ft_tolower(int c);
 int			ft_toupper(int c);
 int			ft_nbrlen(long n, int base);

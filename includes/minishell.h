@@ -62,7 +62,6 @@ enum	e_mini_error
 	NOT_DIR = 12
 };
 
-int		check_piperr(char **a);
 void	ft_replace_tabs_returns(char *str);
 int		builtin(t_prompt *prompt, t_list *cmd, int *is_exit);
 int		is_builtin(t_mini *n);
@@ -77,6 +76,8 @@ int		mini_unset(t_prompt *prompt);
 int		mini_unset_check(char *str);
 int		mini_exit(t_list *cmd, int *is_exit);
 void	*check_args(char *out, t_prompt *p);
+int		check_piperr(char **a);
+int		check_piperr2(char **a);
 char	**ft_cmd_trim(char const *s, char *set);
 char	**ft_cmd_split(char const *s, char *set);
 char	*ft_strtrim_all(char const *s1, int squote, int dquote);

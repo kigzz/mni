@@ -99,7 +99,7 @@ void	*check_args(char *out, t_prompt *p)
 		mini_perror(QUOTE, NULL, 1);
 		return ("");
 	}
-	if (!check_piperr(a))
+	if (!check_piperr2(a) || !check_piperr(a))
 	{
 		ft_putstr_fd("minishell: syntax error near unexpected token\n", 2);
 		g_status = 2;

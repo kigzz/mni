@@ -12,6 +12,31 @@
 
 #include "../includes/minishell.h"
 
+int check_piperr2(char **a)
+{
+	int i;
+	size_t len;
+
+	i = 1;
+	if (!a[0])
+		return (1);
+	while (a[i])
+	{
+		len = ft_strlen(a[i]);
+		if (ft_strnstr(a[i], ">>>", len) || ft_strnstr(a[i], ">>|", len) || ft_strnstr(a[i], ">><", len)
+		|| ft_strnstr(a[i], "><", len) || ft_strnstr(a[i], ">|", len) || ft_strnstr(a[i], "<<<", len)
+		|| ft_strnstr(a[i], "<<|", len) || ft_strnstr(a[i], "<<>", len) || ft_strnstr(a[i], "<>", len)
+		|| ft_strnstr(a[i], "<|", len) || ft_strnstr(a[i], "||", len) || ft_strnstr(a[i], "|>", len)
+		|| ft_strnstr(a[i], "|<", len))
+		{
+			printf("Error strnstr\n");
+			return (0);
+		}
+		i++;
+	}
+	return (1);
+}
+
 int	check_piperr(char **a)
 {
 	int	i;
